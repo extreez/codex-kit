@@ -1,0 +1,32 @@
+id: academic-review
+title: Ревью научного текста
+summary: >-
+  Две стороны академического ревью: self-review автора и внешняя ревью-панель,
+  плюс rebuttal. Sprint Contract (декларация критериев ревью до чтения полного
+  текста - защита от halo effect), панель ревьюеров с углом-параметром
+  (journal-fit, дисциплинарные углы, devil's-advocate с порогом уступки ≥4 -
+  тот же приём, что в research-deep/agents/research-critic.md, не изобретён
+  заново), сведение расхождений через глобальный паттерн debate (не
+  hunter/verifier - здесь оценивается обоснованность аргумента, а не факт с
+  одним правильным ответом), режим ответа рецензенту (rebuttal), re-review с
+  traceability-матрицей вместо доверия слову "исправлено". Стили цитирования
+  (APA/IEEE/Vancouver/Chicago/MLA) и CONSORT-диаграммы проверяются в п.4
+  self-review как часть соответствия формату издания. Идеи
+  Sprint Contract / Devil's Advocate re-use / Editorial Synthesizer /
+  Re-review Traceability пересказаны своими словами из academic-research-skills
+  (CC-BY-NC 4.0) - ни одна дословная фраза не перенесена.
+suggests: [academic-research, fact-check, de-ai-text]
+stacks: [academic]
+source: >-
+  academic-research-skills (CC-BY-NC 4.0, Imbad0202/academic-research-skills)
+  - идеи Sprint Contract, Devil's Advocate re-use, Editorial Synthesizer,
+  Re-review Traceability Matrix пересказаны своими словами, ни одна фраза не
+  скопирована дословно (условие лицензии). Devil's Advocate порог уступки ≥4 -
+  переиспользован дословно тот же приём, что уже введён в
+  research-deep/agents/research-critic.md (собственный синтез codex-kit, не
+  внешний источник повторно). Сведение мнений панели - через глобальный
+  паттерн debate (собственный, уже существующий в codex-kit).
+status: черновик
+requires_env: []
+needs: []
+

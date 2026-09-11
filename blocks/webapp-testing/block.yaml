@@ -1,0 +1,14 @@
+id: webapp-testing
+title: Проверка веб-приложения в браузере (Playwright)
+summary: >-
+  Инструмент разработчика для проверки локального веб-приложения на лету:
+  скриншоты, DOM-инспекция, консоль-логи, менеджер жизненного цикла
+  сервера (with_server.py). Не набор автотестов — верификация фичи перед
+  отчётом о готовности.
+suggests: [playwright]
+stacks: [dev]
+source: anthropics/skills, skills/webapp-testing, Apache 2.0, дословно
+status: черновик
+requires_env: []
+needs: []
+

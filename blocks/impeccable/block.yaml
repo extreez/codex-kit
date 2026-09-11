@@ -1,0 +1,10 @@
+id: impeccable
+title: Anti-slop детектор и команды (impeccable)
+summary: 61 детерминированный детектор + 23 команды (init/audit/polish/new-work/bolder/quieter/distill/overdrive и др.) для всего цикла работы над визуалом
+suggests: [web-taste]
+stacks: [interface]
+source: pbakaus/impeccable, ставится как есть
+status: черновик
+requires_env: []
+needs: []
+

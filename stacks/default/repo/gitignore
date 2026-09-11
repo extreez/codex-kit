@@ -1,0 +1,26 @@
+# Файл-шаблон. При /kit new копируется в проект под именем .gitignore.
+
+# Секреты — никогда.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Обвязка Claude Code — личная, в репозиторий проекта не едет.
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json
+
+# Зависимости и сборка.
+node_modules/
+dist/
+build/
+__pycache__/
+.venv/
+
+# Системное.
+.DS_Store
+Thumbs.db
+desktop.ini

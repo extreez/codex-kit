@@ -1,0 +1,14 @@
+id: rabbithole
+title: Визуализация ресёрча (rabbithole)
+summary: >-
+  MCP-сервер shlokkhemani/rabbithole (MIT) — интерактивный ветвящийся холст:
+  вопрос порождает документ, документ порождает следующие вопросы как узлы
+  холста. Ставится как есть, без переделок — по прямому решению пользователя,
+  своего синтеза этот блок не несёт, только подключение и правила использования.
+suggests: [research-deep]
+stacks: []
+source: rabbithole (shlokkhemani/rabbithole), MIT license, ставится как есть
+status: черновик
+requires_env: []
+needs: []
+

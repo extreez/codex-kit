@@ -1,0 +1,5 @@
+id: prod
+title: Прод-готовность
+source: repo/
+blocks: [deployment-readiness, db-postgres-best-practices, prod-incident-response, tech-debt-tracker]
+

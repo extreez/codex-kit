@@ -1,0 +1,17 @@
+id: shadow-plugin
+title: Многослойные тени (shadow-plugin)
+summary: >-
+  npm Tailwind-плагин (flornkm/shadow-plugin) — многослойные "smooth" тени
+  плюс `smooth-shadow-ring-*`, тень со встроенным 1px hairline-ring вместо
+  отдельного border. Пакет ставится как есть, агентский скилл против
+  двойного бордера портирован дословно (MIT, короткий текстовый файл, не
+  код плагина).
+suggests: [web-color, shadcn-official]
+stacks: [interface]
+source: flornkm/shadow-plugin, MIT. Плагин — как есть (npm). Скилл
+  `skills/shadow-plugin/SKILL.md` — дословный порт (текст, не
+  код плагина).
+status: черновик
+requires_env: []
+needs: []
+

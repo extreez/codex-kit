@@ -1,0 +1,5 @@
+id: dev
+title: Разработка
+source: repo/
+blocks: [context7, dev-build, dev-debug, dev-architecture, dev-ops, dev-onboarding, dev-strategize, dev-loop, readme-polish, readme-badges]
+

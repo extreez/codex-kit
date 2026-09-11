@@ -1,0 +1,17 @@
+id: brand-voice
+title: Голос бренда
+summary: >-
+  1 скилл. Документирование голоса бренда через спектры тона
+  (формальность/авторитетность/эмоция/сложность/энергия/юмор/
+  инновационность), правило voice fixed/tone dial, ревью контента на
+  соответствие тону/терминологии/посылам/стилю/юридическим флагам.
+suggests: [positioning, copywriting]
+stacks: [marketing]
+source: >-
+  anthropics/knowledge-work-plugins (marketing/skills/brand-review),
+  Apache-2.0. Роутер на русском, структура спектров и правило voice
+  fixed/tone dial дословно по смыслу.
+status: черновик
+requires_env: []
+needs: []
+

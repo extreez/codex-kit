@@ -1,0 +1,19 @@
+id: deployment-readiness
+title: Прод-готовность вне привязки к платформе
+summary: >-
+  Стратегии rollout (rolling/blue-green/canary), Docker-паттерны, CI/CD-стадии,
+  health checks, twelve-factor конфиг, откат, чек-лист прод-готовности по
+  пяти зонам, плюс структура формального rollout-плана для рискованных релизов.
+  Стоит над платформенными deploy-* блоками.
+suggests: []
+stacks: [prod]
+source: >-
+  affaan-m/ecc, skill deployment-patterns (MIT) - основа блока, взято близко к
+  тексту (стратегии, Dockerfile-примеры, CI/CD, health checks, откат, чек-лист).
+  Дополнено структурой формального rollout-плана из github/awesome-copilot,
+  skill devops-rollout-plan (MIT) - для случаев крупнее обычного чек-листа
+  (регулируемые/высокорисковые релизы).
+status: черновик
+requires_env: []
+needs: []
+

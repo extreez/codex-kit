@@ -1,0 +1,18 @@
+id: program-metrics
+title: Метрики программы
+summary: >-
+  1 скилл, 5 инструментов: designops-metrics, health-dashboard,
+  impact-reporting, program-kpis, research-ops-coordination. Другой
+  altitude, чем существующий блок `metrics` (продукт/бизнес) — этот про
+  здоровье и трение самой программы/процесса, не продукта.
+suggests: [program-delivery, metrics]
+stacks: [process]
+source: >-
+  Owl-Listener/ux-pgm-skills, плагин `measurement-ops` (5 из 30 скиллов
+  коллекции), MIT, роутер собран заново на русском с обобщением от UX до
+  любой программы, файлы templates/*.md дословно на английском с
+  атрибуцией в каждом.
+status: черновик
+requires_env: []
+needs: []
+

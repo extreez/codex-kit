@@ -1,0 +1,10 @@
+id: taste-skill
+title: Параметризация брифа (taste-skill)
+summary: 3 числовых dial'а (DESIGN_VARIANCE/MOTION_INTENSITY/VISUAL_DENSITY), которые механически определяют CSS-паттерны на каждом уровне, плюс форки (brutalist/minimalist/gpt)
+suggests: [web-taste]
+stacks: [interface]
+source: Leonxlnx/taste-skill, ставится как есть
+status: черновик
+requires_env: []
+needs: []
+

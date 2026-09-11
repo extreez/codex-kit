@@ -1,0 +1,10 @@
+id: graphify
+title: Карта кода — Graphify
+summary: Команда /graphify — tree-sitter без вызовов LLM на код, статический экспорт HTML/MD/JSON. Конкурент repowise из group codebase-map, для разового просмотра, не для живых запросов агента
+suggests: []
+stacks: [dev]
+source: Graphify-Labs/graphify
+status: рабочий
+requires_env: []
+needs: []
+

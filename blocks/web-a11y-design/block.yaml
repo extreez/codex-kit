@@ -1,0 +1,22 @@
+id: web-a11y-design
+title: Доступность на стадии проектирования
+summary: >-
+  accessible-content (7 скиллов: alt-текст, лейблы форм, заголовки,
+  ссылки, медиа, читаемость, таблицы), adaptive-interfaces (6: цвет,
+  типографика, плотность, responsive, системные preference, упрощённые
+  виды), cognitive-accessibility (7: нагрузка, простой язык, навигация,
+  ошибки, фокус, память, помощь), inclusive-interaction (7: клавиатура,
+  touch-таргеты, motion, жесты, фидбек, мультимодальность, голос),
+  better-accessibility (jakubkrehel/skills, код-уровень: ARIA/семантика,
+  focus/keyboard, hit-areas, формы, motion/zoom, screen readers)
+suggests: [web-a11y-code]
+stacks: [interface]
+source: >-
+  Owl-Listener/inclusive-design-skills, MIT, дословно (без
+  orchestrator-скиллов и без баг-дубликата adaptive-personalisation);
+  jakubkrehel/skills better-accessibility, MIT, дословно (добавлено позже
+  — источник в исходном брифе был пропущен агентом ради экономии времени)
+status: черновик
+requires_env: []
+needs: [web-taste]
+

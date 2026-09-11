@@ -1,0 +1,17 @@
+id: content-loop
+title: Цикл контентного конвейера
+summary: >-
+  Цикл content-governance: продвижение материалов по стадиям
+  SIGNAL→PUBLISHED и обязательный readback после публикации. Stop-хук
+  напоминает закрыть readback, если материал опубликован более 14 дней
+  назад (настраиваемо) без записи в docs/marketing/readback-log.md.
+suggests: [metrics]
+stacks: [marketing]
+source: >-
+  Собственный, по образцу `seo-loop`/`sec-loop` (структура цикла и
+  Stop-хук адаптированы под жизненный цикл контента из
+  content-strategy/content-governance).
+status: черновик
+requires_env: []
+needs: [content-strategy]
+

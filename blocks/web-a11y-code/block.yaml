@@ -1,0 +1,10 @@
+id: web-a11y-code
+title: Доступность на стадии кода (AccessLint)
+summary: 5 скиллов конвейером LOCATE→ASSESS→REMEDIATE→GUARD (scan/inspect/audit/fix/diff), пятиисходный ledger по каждому WCAG-критерию, не бинарный гейт
+suggests: [web-a11y-design]
+stacks: [interface]
+source: AccessLint/skills, официальный плагин, ставится как есть
+status: черновик
+requires_env: []
+needs: []
+

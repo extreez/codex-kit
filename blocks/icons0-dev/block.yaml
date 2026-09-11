@@ -1,0 +1,14 @@
+id: icons0-dev
+title: Иконки (icons0.dev)
+summary: >-
+  200k+ иконок, 150+ коллекций (marcoripa96/i0). Два пути: shadcn-реестр без
+  ключа — точечная установка конкретной иконки как React-компонента через
+  `npx shadcn add`; MCP с bearer-ключом — поиск/обзор коллекций, когда
+  точное имя иконки неизвестно. Ставится как есть.
+suggests: [shadcn-official]
+stacks: [interface]
+source: marcoripa96/i0 (icons0.dev), MIT, ставится как есть
+status: черновик
+requires_env: [ICONS0_API_KEY]
+needs: []
+

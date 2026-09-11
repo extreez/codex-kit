@@ -1,0 +1,20 @@
+id: pr-launch
+title: PR и запуск
+summary: >-
+  5 скиллов. public-relations — 4 режима earned media (reactive
+  newsjacking/proactive pitching/inbound/owned press-page), 3 угла
+  истории (никогда конкурент как враг, только система). events — 4
+  роли (host/sponsor/speak/attend), правило 20/80, Saturday Test.
+  co-marketing — 5 типов партнёрств. influencer-marketing — спектр
+  вовлечённости, FTC-комплаенс (отвечает и бренд), сетка ставок по
+  тирам. directory-submissions — чек-лист готовности, алгоритм Product
+  Hunt 2026 (качество комментариев), протокол «10-в-30» для G2/Capterra.
+suggests: [positioning, social-media, retention-growth]
+stacks: [marketing]
+source: >-
+  coreyhaines31/marketingskills (skills/public-relations, events,
+  co-marketing, influencer-marketing, directory-submissions), MIT.
+status: черновик
+requires_env: []
+needs: []
+

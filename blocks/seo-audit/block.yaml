@@ -1,0 +1,20 @@
+id: seo-audit
+title: Технический аудит SEO
+summary: 4-слойная диагностика (crawlability→indexability→renderability→signals) промпт-методологией без API, проверяемый чек-лист, гейт 5-10 находок на проход
+suggests: [seo-content, checklist-design]
+stacks: [seo]
+source: >-
+  calm-north/seojuice-skills, лицензия MIT, синтез своими словами
+  (diagnose-seo — 4-layer diagnostic crawlability/indexability/renderability/
+  signals; audit-speed — LCP/CLS/INP root-cause trees); every-app/open-seo,
+  лицензия не подтверждена в README (LICENSE-файл не проверен построчно) —
+  поэтому не копируется дословно, синтез своими словами (seo-audit —
+  9-шаговый воркфлоу с гейтами: проверка business_overview перед стартом,
+  не больше 5-10 находок в отчёте, Lighthouse отключён по умолчанию);
+  addyosmani/web-quality-skills, лицензия MIT, синтез своими словами
+  (seo — акцент на crawlability и structured data внутри общего
+  web-quality-audit)
+status: черновик
+requires_env: []
+needs: []
+

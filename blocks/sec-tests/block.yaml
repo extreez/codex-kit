@@ -1,0 +1,10 @@
+id: sec-tests
+title: Тесты безопасности
+summary: На каждую находку падающий тест, зеленеющий после фикса. Детект тест-раннера, регресс-набор
+suggests: [sec-audit, sec-policy]
+stacks: [secure]
+source: собственный
+status: рабочий
+requires_env: []
+needs: [sec-policy]
+

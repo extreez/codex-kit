@@ -1,0 +1,20 @@
+id: design-system-tweaks
+title: Вариации без повторов
+summary: >-
+  hallmark/component-cookbook.md — 50 архетипов компонентов (Hero H1-H9,
+  Nav N1-N13 и т.д.), правило diversification (не повторять архетип между
+  разделами/сборками) + within-archetype variation knobs, зафиксированные
+  в CSS-stamp. Синтез-порт, дословно, MIT. screen-alternatives (та же
+  задача в Figma) уже в figma-canvas/flow-explore, слайдеры taste-skill —
+  уже отдельный блок, не дублируются здесь. garden-skills (25 именных
+  стилевых рецептов) сознательно не включены — та же природа, что у
+  именных стилевых скиллов MengTo (уже отправлены в будущую галерею
+  apps/, не в блок-скилл): готовый референс для копирования, не механизм
+  генерации вариации.
+suggests: [design-system-docs, web-taste, figma-canvas, taste-skill]
+stacks: [interface]
+source: Nutlope/hallmark (references/component-cookbook.md), MIT, дословно
+status: черновик
+requires_env: []
+needs: []
+

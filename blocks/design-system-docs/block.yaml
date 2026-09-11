@@ -1,0 +1,23 @@
+id: design-system-docs
+title: Документ дизайн-системы (создать + контролировать)
+summary: >-
+  Один узел на две роли, по прямому решению пользователя не разносить
+  create/control по разным блокам. Создание: hallmark study (извлечь
+  "ДНК" дизайна из URL/скриншота, не пиксели) → design.md, tastemaker
+  style-lock.md (файл-контракт: палитра-по-ролям с обязательными
+  коэффициентами контраста, типографика, spacing, motion, "Do not").
+  Контроль: tastemaker audit сверяет CSS-stamp дизайн-решений с реальной
+  страницей, несовпадение = "stamp lies". `design-system-documentation`
+  (та же задача в Figma) уже в figma-canvas/design-docs, не дублируется.
+  builder-os/design-system из исходного брифа не найден (0 публичных
+  репозиториев у организации) — пропущен по решению пользователя.
+suggests: [design-system-tokens, web-taste, figma-canvas]
+stacks: [interface]
+source: >-
+  Nutlope/hallmark (references/study.md, MIT, дословно), codeswithroh/
+  tastemaker (references/style-lock-format.md +
+  references/verbs/audit.md, MIT, дословно)
+status: черновик
+requires_env: []
+needs: [web-taste]
+

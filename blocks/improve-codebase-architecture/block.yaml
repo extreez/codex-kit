@@ -1,0 +1,22 @@
+id: improve-codebase-architecture
+title: Найти "мелкие" модули в существующем коде
+summary: >-
+  Сканирует уже написанный код на deletion-test кандидатов для углубления
+  модуля (не проектирование нового — dev-architecture для этого). Отчёт
+  кандидатов с картой до/после и меткой уверенности, разбор выбранного через
+  grilling. Не спорит с dev-architecture — другой этап.
+suggests: [dev-architecture]
+stacks: [dev]
+source: >-
+  mattpocock/skills, skill improve-codebase-architecture (MIT) - взято близко
+  к тексту. Оригинал генерирует самодостаточный HTML-отчёт (Tailwind+Mermaid
+  через CDN, файл HTML-REPORT.md с полным скаффолдом) — здесь упрощено до
+  текстового описания карточки кандидата без HTML-скаффолда; добавить HTML при
+  необходимости, взяв HTML-REPORT.md из исходного репозитория. Использует
+  словарь из mattpocock/skills codebase-design (тоже MIT), который частично
+  влит в dev-architecture отдельной правкой (deletion test, seam/adapter),
+  чтобы термины не расходились между двумя блоками.
+status: черновик
+requires_env: []
+needs: []
+

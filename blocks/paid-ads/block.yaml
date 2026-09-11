@@ -1,0 +1,22 @@
+id: paid-ads
+title: Платная реклама
+summary: >-
+  2 скилла. paid-ads — структура кампаний, плейбуки Meta (Andromeda-era
+  2026+: creative-first/targeting-second)/Google Search/LinkedIn/ABM,
+  формулы PAS/BAB, таргетинг по стадии воронки, бюджет 70/30
+  test/proven. ad-creative — grounded-inputs дисциплина, платформенные
+  лимиты символов, библиотека форматов (UGC/motion/iMessage-style),
+  процесс генерация→итерация→масштабирование.
+suggests: [positioning, copywriting, metrics, cro-funnel]
+stacks: [marketing]
+source: >-
+  coreyhaines31/marketingskills (skills/ads v2.3.2, skills/ad-creative
+  v2.8.2), MIT; alirezarezvani/claude-skills (marketing-skill/skills/
+  paid-ads, ad-creative — близкие источники, синтезированы вместе, не
+  установлены отдельно), MIT. Growth-engine (ericosiu/ai-marketing-
+  skills, альтернативная статистика bootstrap+Mann-Whitney) — не
+  включён сюда, см. CONFLICTS.md как альтернатива `ab-testing`.
+status: черновик
+requires_env: []
+needs: []
+

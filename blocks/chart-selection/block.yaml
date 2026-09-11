@@ -1,0 +1,22 @@
+id: chart-selection
+title: Выбор и композиция чартов
+summary: >-
+  Companion к встроенному Anthropic-скиллу dataviz, не замена. Быстрая
+  таблица форма-данных->тип чарта, композиция нескольких чартов в
+  отчёт/дашборд (идея report-режима из lieflat-charts, без единой строки их
+  кода, лицензия PolyForm Noncommercial это запрещает), паттерн "файл
+  токенов чарта как источник правды", чек-лист честности данных перед
+  выдачей. Синтез из отложенной заметки NOTES.md (Owl-Listener/
+  designer-skills, ui-design/skills/data-visualization, MIT) и разведки
+  lieflat-charts (только идеи).
+suggests: [web-color, dataviz]
+stacks: [visualization]
+source: >-
+  Owl-Listener/designer-skills (ui-design/skills/data-visualization, MIT,
+  синтез), идеи из larashero3-dotcom/lieflat-charts (PolyForm Noncommercial,
+  код не использован, только концепции: дерево выбора, файл токенов,
+  режим отчёта)
+status: черновик
+requires_env: []
+needs: []
+

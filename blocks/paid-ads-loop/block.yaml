@@ -1,0 +1,16 @@
+id: paid-ads-loop
+title: Цикл рекламных тестов
+summary: >-
+  Цикл тест-readback-promote/rollback для активных рекламных
+  кампаний/креативов. Stop-хук напоминает закрыть решение, если
+  плановое окончание теста в `docs/marketing/paid-ads-tests.md` уже
+  прошло, а решение не записано.
+suggests: [metrics]
+stacks: [marketing]
+source: >-
+  Собственный, по образцу `seo-loop`/`sec-loop` (структура цикла и
+  Stop-хук адаптированы под жизненный цикл рекламного теста).
+status: черновик
+requires_env: []
+needs: [paid-ads]
+

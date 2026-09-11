@@ -1,0 +1,9 @@
+id: sec-policy
+title: Политика безопасности
+summary: Единственный источник правил безопасности. Чеклист, блокирующий хук, запись политики в AGENTS.md проекта
+suggests: [sec-audit, sec-tests]
+stacks: [secure]
+source: собственный
+status: рабочий
+requires_env: []
+

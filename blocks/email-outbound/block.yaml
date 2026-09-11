@@ -1,0 +1,23 @@
+id: email-outbound
+title: Email и SMS
+summary: >-
+  3 скилла. email-sequence — многошаговые цепочки (welcome/nurture/
+  re-engagement/win-back), ветвление по поведению, тайминг, бенчмарки.
+  cold-email — B2B outbound: тон равного, 4-уровневая персонализация,
+  расписание follow-up (1/4/9/16/25/35 дней), панель оценки перед
+  отправкой, аудит инфраструктуры (warmup, лимиты). sms — TCPA/A2P
+  10DLC комплаенс (США), типы номеров, экономика кодировки сообщений.
+suggests: [positioning, copywriting, metrics]
+stacks: [marketing]
+source: >-
+  coreyhaines31/marketingskills (skills/emails, skills/cold-email,
+  skills/sms), MIT; anthropics/knowledge-work-plugins (marketing/
+  skills/email-sequence), Apache-2.0; alirezarezvani/claude-skills
+  (marketing-skill/skills/email-sequence — близкий источник, синтезирован
+  вместе, не установлен отдельно), MIT; ericosiu/ai-marketing-skills
+  (outbound-engine — панель оценки, бенчмарки, аудит инфраструктуры),
+  MIT.
+status: черновик
+requires_env: []
+needs: []
+

@@ -1,0 +1,17 @@
+id: ux-writing
+title: Копирайтинг интерфейса
+summary: >-
+  better-writing (jakubkrehel/skills) — голос и тон по ставкам момента,
+  verb-first кнопки, ошибки рядом с полем с инструкцией по фиксу, пустые
+  состояния, единая capitalization-политика, формат отчёта severity/verdict.
+  Синтез-порт, дословно, MIT. balise-ux-writing.md/spec-notes.md из
+  исходного брифа на деле Figma-canvas-специфичны (работают с фреймами/
+  слоями внутри файла) — не портативны, кандидаты в figma-canvas, не сюда
+  (см. NOTES.md).
+suggests: [web-taste, web-fundamentals]
+stacks: [interface]
+source: jakubkrehel/skills (skills/better-writing/SKILL.md), MIT, дословно
+status: черновик
+requires_env: []
+needs: []
+

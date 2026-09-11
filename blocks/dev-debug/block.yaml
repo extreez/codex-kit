@@ -1,0 +1,10 @@
+id: dev-debug
+title: Диагностика бага
+summary: Структурная диагностика для бага, у которого причина не очевидна с первого взгляда — минимизация, гипотезы, инструментирование
+suggests: [dev-build]
+stacks: [dev]
+source: собственный (синтез mattpocock/skills diagnosing-bugs, addyosmani/agent-skills debugging-and-error-recovery)
+status: черновик
+requires_env: []
+needs: []
+

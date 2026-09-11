@@ -1,0 +1,27 @@
+id: research-deep
+title: Глубокое исследование вопроса
+summary: >-
+  Синтез методологии hyperresearch (MIT) - тиры глубины light/full/dissertation,
+  patch-never-regenerate, независимость источников, поиск слепых зон, persistent
+  vault - упрощённой до файлов codex-kit. Плюс адаптированные своими словами идеи
+  из academic-research-skills (CC-BY-NC 4.0): Devil's Advocate с порогом уступки,
+  dialogue health monitor, contamination signals. Проверку цитат делегирует
+  скиллу fact-check, не переизобретает свою. Пайплайн: декомпозиция вопроса ->
+  параллельные research-investigator по подвопросам -> склейка дублирующихся
+  источников -> черновик синтеза -> состязательные research-critic -> точечная
+  правка research-patcher (только Read+Edit, без Write) -> fact-check черновика
+  -> отчёт с секцией "что не покрыто".
+suggests: [de-ai-text]
+stacks: [research, academic]
+source: >-
+  Синтез методологии (не порт кода): hyperresearch (MIT, jordan-gibbs/hyperresearch)
+  - тиры глубины, patch-never-regenerate, независимость источников, поиск
+  слепых зон, persistent vault. academic-research-skills (CC-BY-NC 4.0,
+  Imbad0202/academic-research-skills) - идеи пересказаны своими словами:
+  Devil's Advocate с порогом уступки, dialogue health monitor, contamination
+  signals. Верификация цитат переиспользует блок fact-check вместо своей
+  реализации.
+status: черновик
+requires_env: []
+needs: [fact-check]
+

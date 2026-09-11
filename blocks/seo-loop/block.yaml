@@ -1,0 +1,14 @@
+id: seo-loop
+title: Цикл технического SEO
+summary: Цикл audit→fix→re-crawl→verify до нуля high-impact находок, по образцу sec-loop
+suggests: [seo-audit]
+stacks: [seo]
+source: >-
+  Собственный, по образцу `sec-loop` (структура цикла и Stop-хук
+  адаптированы под SEO-предметку); критерий остановки вдохновлён гейтом
+  "5-10 находок" every-app/open-seo (лицензия не подтверждена — сама
+  структура шага, не текст)
+status: черновик
+requires_env: []
+needs: [seo-audit]
+

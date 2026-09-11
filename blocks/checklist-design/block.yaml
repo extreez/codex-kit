@@ -1,0 +1,16 @@
+id: checklist-design
+title: Чек-листы функциональной полноты (checklist.design)
+summary: >-
+  112 предметных чек-листов по типу страницы (Login, Paywall, Onboarding,
+  Billing, 404 и т.д.) — что должно быть на странице этого типа, не про
+  крафт. Audit (построчная сверка, 5 статусов) или critique (свободная
+  рецензия), если чек-лист не подходит. Не Figma-only — работает со
+  скриншотом, живым URL или файлом кода.
+suggests: [web-fundamentals, web-taste]
+stacks: [interface]
+source: checklist.design (Figma Community, bundle v3.2.0), лицензия не
+  заявлена, дословно
+status: черновик
+requires_env: []
+needs: []
+

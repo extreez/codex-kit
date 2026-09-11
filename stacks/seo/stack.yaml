@@ -1,0 +1,5 @@
+id: seo
+title: SEO/GEO
+source: repo/
+blocks: [seo-audit, seo-loop, seo-content, seo-content-maintenance, seo-offpage, seo-local, geo-optimize, geo-loop, geo-content, llms-txt]
+

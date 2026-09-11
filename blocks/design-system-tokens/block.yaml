@@ -1,0 +1,15 @@
+id: design-system-tokens
+title: Архитектура токенов
+summary: >-
+  design-system-patterns (wshobson/agents/plugins/ui-design) — 3-уровневая
+  архитектура токенов (примитив→семантика→компонент), React ThemeProvider,
+  CVA-варианты, Style Dictionary конфиг под CSS/SCSS/iOS/Android. Синтез-
+  порт, дословно, MIT. `build-a-variable-library` (та же задача в Figma) —
+  уже в `figma-canvas/design-docs`, не дублируется здесь.
+suggests: [design-system-extract, web-color, figma-canvas]
+stacks: [interface]
+source: wshobson/agents (plugins/ui-design/skills/design-system-patterns), MIT, дословно
+status: черновик
+requires_env: []
+needs: []
+

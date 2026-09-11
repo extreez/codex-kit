@@ -1,0 +1,10 @@
+id: sec-loop
+title: Автоматика безопасности
+summary: Stop-hook гейт на изменённый код, цикл аудит-фикс-тест до нуля находок, расписание деп-аудита и проверки секретов
+suggests: [sec-audit, sec-tests]
+stacks: [secure]
+source: собственный
+status: рабочий
+requires_env: []
+needs: [sec-audit, sec-tests]
+

@@ -1,0 +1,10 @@
+id: figma-canvas
+title: Работа на холсте Figma
+summary: 7 скиллов поверх официального Figma MCP — уборка/аудит слоёв, документация дизайн-систем и переменных, аннотации компонентов (property/color/api/anatomy), флоу-исследование (2 альтернативы экрана, desktop→mobile, соединение экранов), отчётность по файлу, камера/моушен-риг, iOS-дизайн
+suggests: []
+stacks: [interface]
+source: Figma Community (экспортировано пользователем локально; skill-id источников — layer-cleanup, analyze-components, component-handoff (Mauro Berteri, v4), design-system-documentation, design-system-gen, build-a-variable-library (UI Collective), create-property/create-color/create-api/create-anatomy (адаптировано из uSpec, Ian Guisard, MIT), text-to-flows, screen-alternatives, desktop-to-mobile, connect-screens, catch-me-up, daily-report, camera-pan-and-zoom, ios-app-design)
+status: черновик
+requires_env: []
+needs: [figma-mcp]
+

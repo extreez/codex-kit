@@ -1,0 +1,23 @@
+id: web-motion
+title: Моушен интерфейса
+summary: >-
+  10 скиллов: find-animation-opportunities (гейт "нужна ли анимация
+  вообще") → apple-design (spring-физика, прерываемость, momentum) +
+  animation-systems (продуктовые числа/паттерны Stripe-Linear-Apple-
+  Vercel) → transitions-dev (32 готовых CSS-перехода) + better-interface-
+  motion (точные числа для частных случаев) → gsap/gsap-scrolltrigger-
+  storytelling/threejs/animation-on-scroll (движки под реализацию) +
+  animation-vocabulary (словарь для называния эффектов).
+suggests: [web-taste, web-fundamentals, web-a11y-design]
+stacks: [interface]
+source: >-
+  emilkowalski/skills (apple-design, animation-vocabulary,
+  find-animation-opportunities — MIT, дословно), MengTo/Skills
+  (gsap, gsap-scrolltrigger-storytelling, threejs, animation-on-scroll,
+  animation-systems — MIT, дословно), better-interface.md (Figma
+  Community, домен Motion, дословно), Jakubantalik/transitions.dev
+  (без лицензии — установка апстрима, не порт)
+status: черновик
+requires_env: []
+needs: []
+

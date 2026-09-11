@@ -1,0 +1,17 @@
+id: deploy-expo-eas
+title: Деплой Expo-приложений через EAS
+summary: >-
+  Сборка/отправка в App Store/Google Play/TestFlight через EAS CLI: eas.json
+  профили, версионирование, мониторинг билдов. Платный сервис — предупреждение
+  о стоимости встроено.
+suggests: [deployment-readiness]
+stacks: []
+source: >-
+  expo/skills, skill eas-app-stores v1.0.0 (MIT, Expo) - взято дословно,
+  лицензия разрешает. На skills.sh скилл индексирован под именем
+  "expo-deployment" - несовпадение с текущим именем в репозитории (eas-app-stores),
+  содержимое референс-файлов совпадает.
+status: черновик
+requires_env: []
+needs: []
+

@@ -1,0 +1,27 @@
+id: copywriting
+title: Копирайтинг и редактура
+summary: >-
+  2 скилла + 2 справочника. copywriting — продающий текст с нуля (Human
+  Action Model, «Now you can» тест, Perception Gap, структура страницы,
+  формулы заголовков/CTA). copy-editing — редактура готового текста
+  через Seven Sweeps (Clarity/Voice&Tone/So What/Prove It/Specificity/
+  Heightened Emotion/Zero Risk) + AI-детект + Voice Injection.
+  references/mental-models.md — ~25 моделей убеждения (anchoring,
+  scarcity, social proof, decoy effect и др.) для copywriting/cro-funnel.
+  references/ai-word-list.md — AI-слова-паразиты и конструкции для
+  английского маркетингового текста (отдельно от личного правила
+  no-ai-slop пользователя, которое про русский текст).
+suggests: [positioning, brand-voice, ux-research]
+stacks: [marketing]
+source: >-
+  coreyhaines31/marketingskills (skills/copywriting, skills/copy-editing,
+  skills/marketing-psychology), MIT, роутеры на русском, фреймворки
+  дословно по смыслу; alirezarezvani/claude-skills (marketing-skill/
+  skills/content-humanizer — AI-детект и Voice Injection), MIT;
+  ericosiu/ai-marketing-skills (x-longform-post — часть AI-word-list),
+  MIT. references/mental-models.md — синтез общеизвестных моделей
+  поведенческой экономики, не дословная копия одного источника.
+status: черновик
+requires_env: []
+needs: []
+

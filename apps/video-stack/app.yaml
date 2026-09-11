@@ -1,0 +1,22 @@
+id: video-stack
+title: Внешний стек видео-конвейера
+summary: >-
+  Проверка и установка чужих инструментов, на которых стоят блоки
+  video-pipeline и video-watch: HyperFrames, video-use, creative-skill с
+  gcv-kie-cli, claude-video, whisper.cpp, MOSS-TTS-Nano, Blender MCP.
+  Ставится руками, в стеки не входит. check.sh говорит, чего не хватает
+  и какой командой это чинится
+kind: репо-инструмент
+source: >-
+  https://github.com/heygen-com/hyperframes,
+  https://github.com/browser-use/video-use,
+  https://github.com/extreez/creative-skill,
+  https://github.com/extreez/gcv-kie-cli,
+  https://github.com/bradautomates/claude-video,
+  https://github.com/ggml-org/whisper.cpp,
+  https://github.com/OpenMOSS/MOSS-TTS-Nano,
+  https://projects.blender.org/lab/blender_mcp
+requires_env: [KIE_API_KEY, GEMINI_API_KEY, WHISPER_CLI_PATH, WHISPER_MODEL]
+requires: [ffmpeg, node, python, uv, git]
+status: обёртка
+

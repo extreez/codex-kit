@@ -1,0 +1,22 @@
+id: retention-growth
+title: Retention и growth
+summary: >-
+  4 скилла. churn-prevention — cancel-flow (survey→dynamic offer→
+  confirmation), offer-to-reason mapping, health score, dunning-стек с
+  бенчмарками восстановления. referrals — Viral Potential Spectrum,
+  разделение referral/affiliate, психология подачи награды, 6 метрик
+  виральности (k-factor). community-marketing — 5 моделей сообществ,
+  flywheel, метрики здоровья (DAU/MAU>20%). free-tools-and-lead-magnets
+  — статичный магнит vs интерактивный инструмент, оценка идеи по 6
+  факторам, привязка к стадии покупателя.
+suggests: [positioning, email-outbound, metrics]
+stacks: [marketing]
+source: >-
+  coreyhaines31/marketingskills (skills/churn-prevention, referrals,
+  community-marketing, free-tools, lead-magnets), MIT;
+  alirezarezvani/claude-skills (marketing-skill/skills/free-tool-strategy
+  — дубль free-tools, синтезирован вместе, не установлен отдельно), MIT.
+status: черновик
+requires_env: []
+needs: []
+

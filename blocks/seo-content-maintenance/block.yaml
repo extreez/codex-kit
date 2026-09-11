@@ -1,0 +1,13 @@
+id: seo-content-maintenance
+title: Починка просевшего контента
+summary: Decay triage (outdated vs cannibalized vs intent shift) → фикс → повторный замер трафика, цикл с проверяемым критерием
+suggests: [seo-content, seo-audit]
+stacks: [seo]
+source: >-
+  calm-north/seojuice-skills, лицензия MIT, синтез своими словами
+  (recover-content — decay triage: outdated/cannibalized/intent shift →
+  fix → re-measure traffic; сама структура цикла, не текст)
+status: черновик
+requires_env: []
+needs: []
+

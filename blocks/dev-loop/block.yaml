@@ -1,0 +1,10 @@
+id: dev-loop
+title: Автоматика стека dev
+summary: Stop-hook гейт на изменённый код без ревью, цикл по срезам dev-build до зелёного состояния
+suggests: [dev-build]
+stacks: [dev]
+source: собственный (по образцу sec-loop)
+status: черновик
+requires_env: []
+needs: [dev-build]
+

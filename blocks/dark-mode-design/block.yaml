@@ -1,0 +1,13 @@
+id: dark-mode-design
+title: Тёмная тема
+summary: >-
+  Адаптация готовой светлой палитры под тёмную тему: иерархия
+  поверхностей (background/surface 1-3), пересчёт контраста, десатурация,
+  accessibility в тёмной теме. Не про построение палитры с нуля.
+suggests: [web-color, web-fundamentals]
+stacks: [interface]
+source: Owl-Listener/designer-skills, ui-design/skills/dark-mode-design, MIT, перевод
+status: черновик
+requires_env: []
+needs: [web-taste]
+

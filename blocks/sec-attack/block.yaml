@@ -1,0 +1,10 @@
+id: sec-attack
+title: Красная команда
+summary: Атака по своему приложению на localhost, проверка находок эксплойтом, предохранитель на чужие цели, опция Strix
+suggests: [sec-audit, sec-tests]
+stacks: [secure]
+source: собственный
+status: рабочий
+requires_env: []
+needs: [sec-policy]
+

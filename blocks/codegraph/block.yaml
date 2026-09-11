@@ -1,0 +1,10 @@
+id: codegraph
+title: Карта кода — Codegraph
+summary: MCP индексатор, tree-sitter, 20+ языков, локальный граф для impact-анализа. Конкурент repowise из group codebase-map, дублирует его без нового смысла
+suggests: []
+stacks: [dev]
+source: colbymchenry/codegraph
+status: рабочий
+requires_env: []
+needs: []
+

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "icons0": {
+      "type": "http",
+      "url": "https://icons0.dev/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ICONS0_API_KEY}"
+      }
+    }
+  }
+}
+

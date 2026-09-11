@@ -1,0 +1,15 @@
+id: tech-debt-tracker
+title: План устранения технического долга
+summary: >-
+  Анализ-только (без правки кода): типы долга, метрики ease/impact/risk по
+  шкале 1-5, формат плана (сводная таблица + детальный план по каждой
+  находке). Ранее отклонён в NOTES.md как нишевый — теперь запрошен явно.
+suggests: []
+stacks: [prod]
+source: >-
+  github/awesome-copilot, agent tech-debt-remediation-plan (MIT) - взято
+  близко к тексту.
+status: черновик
+requires_env: []
+needs: []
+

@@ -1,0 +1,16 @@
+id: deploy-render
+title: Деплой на Render
+summary: >-
+  Blueprint-методология render.yaml: типы сервисов (web/pserv/worker/cron),
+  managed Postgres/Key Value в том же файле, envVarGroups, превью-окружения,
+  синхронизация при каждом пуше.
+suggests: [deployment-readiness, db-postgres-best-practices]
+stacks: []
+source: >-
+  Готового Codex скилла под Render не существовало на момент сборки -
+  блок синтезирован с нуля по официальной документации render.com (модель
+  Blueprint, типы сервисов, envVarGroups, превью-окружения).
+status: черновик
+requires_env: []
+needs: []
+

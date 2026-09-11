@@ -1,0 +1,16 @@
+id: web-color
+title: Цвет (OKLCH, извлечение токенов, рампы)
+summary: >-
+  oklch-skill (конвертация/палитры/контраст, ставится как есть) + dembrandt
+  CLI (извлечение цветовой системы живого сайта в токены, ставится как есть)
+  + better-colors (принципы построения рампы и токенов, синтез-порт дословно)
+suggests: [web-fundamentals, web-a11y-code, design-system-tokens]
+stacks: [interface]
+source: >-
+  jakubkrehel/oklch-skill (ставится как есть), dembrandt/dembrandt (CLI,
+  ставится как есть, без MCP — по прямому решению пользователя), jakubkrehel/
+  skills skills/better-colors (SKILL.md + 6 reference-файлов, MIT, дословно)
+status: черновик
+requires_env: []
+needs: [web-taste]
+

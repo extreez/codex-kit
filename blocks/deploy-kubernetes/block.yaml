@@ -1,0 +1,16 @@
+id: deploy-kubernetes
+title: Деплой в Kubernetes
+summary: >-
+  Манифесты Pod/Deployment/Service/Ingress, health-пробы, ресурсы/HPA,
+  Pod Security Context, стратегии rolling/blue-green/canary, чек-лист
+  манифеста, базовая диагностика.
+suggests: [deployment-readiness]
+stacks: []
+source: >-
+  github/awesome-copilot, kubernetes-deployment-best-practices.instructions.md
+  (MIT) - взято близко к тексту, адаптировано под формат SKILL.md. Бонусная
+  находка вне исходного списка источников пользователя.
+status: черновик
+requires_env: []
+needs: []
+

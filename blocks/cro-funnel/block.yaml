@@ -1,0 +1,30 @@
+id: cro-funnel
+title: CRO по этапам воронки
+summary: >-
+  1 скилл + 3 референса + 3 субагента + 1 команда. cro-funnel — общая
+  7-факторная методология трения (ясность/трение/доверие/мотивация/
+  отвлечение/обратная связь/соответствие ожиданию) и единый шаблон
+  Issue/Impact/Fix/Priority. Шесть почти одинаковых по структуре
+  роутеров источников (cro/signup/onboarding/paywalls/popups +
+  form-cro/onboarding-cro/page-cro/paywall-upgrade-cro/popup-cro/
+  signup-flow-cro) объединены в один скилл с тремя этапо-специфичными
+  чек-листами: activation-funnel.md (регистрация+онбординг, Endowed
+  Progress/Peak-End/Fogg Behavior Model), monetization-triggers.md
+  (paywall+попапы), page-and-form.md (страница+форма). `/cro-funnel` —
+  команда, параллелящая 3 субагента (activation-checker/
+  monetization-checker/page-form-checker, по образцу geo-optimize) в
+  единый приоритизированный бэклог. Для автоматического цикла
+  диагностика→фикс→перепроверка — блок `cro-funnel-loop`.
+suggests: [ab-testing, copywriting, ux-research]
+stacks: [marketing]
+source: >-
+  coreyhaines31/marketingskills (skills/cro, signup, onboarding,
+  paywalls, popups), MIT; alirezarezvani/claude-skills (marketing-skill/
+  skills/form-cro, onboarding-cro, page-cro, paywall-upgrade-cro,
+  popup-cro, signup-flow-cro — шесть источников с идентичным шаблоном
+  Issue/Impact/Fix/Priority, объединены в один скилл вместо шести
+  почти одинаковых установок), MIT.
+status: черновик
+requires_env: []
+needs: []
+

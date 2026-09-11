@@ -1,0 +1,15 @@
+id: supabase
+title: Supabase — CLI, Auth, RLS, миграции
+summary: >-
+  Core principles (сверка changelog, верификация фикса), детальный чек-лист
+  безопасности RLS/views/SECURITY DEFINER/storage, работа с CLI и MCP-сервером,
+  declarative vs imperative миграции, обязательная сверка с доками при отладке.
+suggests: []
+stacks: []
+source: >-
+  supabase/agent-skills, skill supabase v0.1.2 (MIT, Supabase) - взято
+  дословно, лицензия разрешает.
+status: черновик
+requires_env: []
+needs: [db-postgres-best-practices]
+

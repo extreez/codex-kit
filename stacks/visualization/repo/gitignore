@@ -1,0 +1,17 @@
+# Файл-шаблон. При /kit new копируется в проект под именем .gitignore.
+
+# Секреты - никогда.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Личное, не общее с командой.
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Системное.
+.DS_Store
+Thumbs.db
+desktop.ini

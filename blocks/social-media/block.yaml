@@ -1,0 +1,27 @@
+id: social-media
+title: SMM
+summary: >-
+  5 скиллов. social-media-strategy — выбор платформ, content pillar
+  40/20/15/15/10, три режима (с нуля/аудит/масштабирование).
+  social-content — формулы хуков, репурпозинг, недельный батчинг,
+  short-form сценарий (3-second rule, без монтажа). linkedin — все 5
+  аспектов LinkedIn (контент/профиль/стратегия/engagement/аналитика) с
+  центральной политикой no-auto-send. x-twitter-growth — 4 типа
+  постов, founder-voice структура, humanizer-чек-лист, веса алгоритма.
+  youtube-packaging — заголовки/превью (promise/evidence/stakes/proof),
+  анализ видео-выбросов конкурентов — без монтажа/производства (см.
+  NOTES.md, видео-конвейер отложен отдельным будущим блоком).
+suggests: [content-strategy, copywriting, brand-voice, metrics]
+stacks: [marketing]
+source: >-
+  coreyhaines31/marketingskills (skills/social), MIT;
+  alirezarezvani/claude-skills (marketing-skill/skills/social-content,
+  social-media-manager, x-twitter-growth; marketing/linkedin/skills/*
+  — 5 скиллов объединены в один файл), MIT; ericosiu/ai-marketing-skills
+  (x-longform-post — часть founder-voice/humanizer;
+  packaging-youtube-thumbnails, yt-competitive-analysis — только
+  маркетинговая часть, без FFmpeg/производства), MIT.
+status: черновик
+requires_env: []
+needs: []
+

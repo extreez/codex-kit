@@ -1,0 +1,16 @@
+id: cro-funnel-loop
+title: Цикл CRO-воронки
+summary: >-
+  Цикл диагностика→фикс→перепроверка до нуля находок Priority=High, по
+  образцу seo-loop. Stop-хук напоминает прогнать `/cro-funnel`, если
+  менялись файлы регистрации/онбординга/paywall/попапа/формы, а свежий
+  бэклог не собирался.
+suggests: [ab-testing]
+stacks: [marketing]
+source: >-
+  Собственный, по образцу `seo-loop`/`sec-loop` (структура цикла и
+  Stop-хук адаптированы под воронку конверсии).
+status: черновик
+requires_env: []
+needs: [cro-funnel]
+

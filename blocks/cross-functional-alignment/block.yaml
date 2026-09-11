@@ -1,0 +1,23 @@
+id: cross-functional-alignment
+title: Кросс-функциональный алайнмент
+summary: >-
+  2 скилла: decision-and-roles (decision-log, intake-process,
+  okr-alignment, raci-matrix, working-agreement — 5 инструментов явности
+  вместо кулуарных решений), stakeholder-comms (stakeholder-map,
+  alignment-workshop, escalation-plan, executive-update, status-report —
+  5 форматов коммуникации со стейкхолдерами). Обобщено от исходной темы
+  «UX-программа» до любой кросс-функциональной команды.
+suggests: [program-delivery, product-execution]
+stacks: [process]
+source: >-
+  Owl-Listener/ux-pgm-skills, плагины `cross-functional-alignment` и
+  `stakeholder-comms` (10 из 30 скиллов коллекции), MIT, роутеры собраны
+  заново на русском с обобщением от UX до любой команды. `stakeholder-
+  map` — синтез с phuryn/pm-skills `pm-execution/stakeholder-map`
+  (был дубль в двух источниках, собран один текст вместо двух, см.
+  NOTES-process.md). Остальные файлы templates/*.md дословно на
+  английском с атрибуцией в каждом.
+status: черновик
+requires_env: []
+needs: []
+

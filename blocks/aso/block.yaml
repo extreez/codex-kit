@@ -1,0 +1,18 @@
+id: aso
+title: App Store Optimization
+summary: >-
+  1 скилл. Оценка ключевых слов по 4 взвешенным критериям (объём/
+  конкуренция/релевантность/локализация), матрица конкурентов, A/B-тест
+  метаданных (иконка/скриншоты/заголовок), трёхуровневая классификация
+  зрелости бренда (Dominant/Established/Challenger) для калибровки
+  стратегии.
+suggests: [ab-testing, seo-audit]
+stacks: [marketing]
+source: >-
+  alirezarezvani/claude-skills (marketing-skill/skills/
+  app-store-optimization), MIT. Роутер на русском, методология
+  дословно по смыслу.
+status: черновик
+requires_env: []
+needs: []
+

@@ -1,0 +1,20 @@
+id: geo-content
+title: Контент под GEO
+summary: 15-пунктный чек-лист под цитируемость в AI-ответах (llms.txt, атомизация, Query Fan-Out, мультимодальность, Schema, data-nosnippet) + платформенная адаптация
+suggests: [llms-txt, geo-optimize]
+stacks: [seo]
+source: >-
+  habr.com/934592, RU-статья, синтез своими словами по прочитанному
+  чек-листу (llms.txt+llms-full.txt в корне, H1-H6 структура по интентам,
+  атомизация абзацев, Query Fan-Out, мультимодальность, Schema.org,
+  data-nosnippet — 15-пунктный чек-лист пересказан своими словами, не
+  копия текста статьи); aaron-he-zhu/seo-geo-claude-skills (архив) /
+  aaron-marketing-skills, лицензия Apache-2.0, синтез своими словами
+  (geo-content-optimizer — платформенная адаптация контента под ChatGPT/
+  Perplexity/Google AIO; ключевая деталь — домены пересекаются между
+  платформами всего на ~11%, платформенная оптимизация не обобщается
+  на все площадки одинаково)
+status: черновик
+requires_env: []
+needs: []
+

@@ -1,0 +1,20 @@
+id: marketing-audit
+title: Кросс-канальный аудит маркетинга
+summary: >-
+  1 скилл + 4 субагента + 1 команда + 1 референс. `/marketing-audit`
+  параллелит `positioning-checker`/`content-checker`/`channel-checker`/
+  `paid-cro-checker` (по образцу geo-optimize) в единый взвешенный
+  composite score 0-100 (равные веса 25% на зону, см.
+  references/health-rubric.md). Диагностика и приоритизация — не чинит
+  находки, фикс делают профильные блоки (content-loop/paid-ads-loop/
+  cro-funnel-loop) или владелец вручную.
+suggests: [positioning, content-strategy, social-media, email-outbound, paid-ads, cro-funnel, content-loop, paid-ads-loop, cro-funnel-loop]
+stacks: [marketing]
+source: >-
+  Собственный синтез по архитектуре `geo-optimize` (4 параллельных
+  субагента → взвешенный composite score), адаптирован под маркетинг —
+  не порт стороннего источника.
+status: черновик
+requires_env: []
+needs: []
+

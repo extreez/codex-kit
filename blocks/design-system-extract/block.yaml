@@ -1,0 +1,15 @@
+id: design-system-extract
+title: Извлечение дизайн-системы с сайта
+summary: >-
+  extract-design-system (arvindrk) — обёртка над dembrandt CLI (уже есть в
+  web-color/dembrandt-color), добавляет normalized.json + стартовые
+  tokens.json/tokens.css под проект и режим init для регенерации без
+  повторного извлечения. Ставится как есть, апстрим сам зависит от
+  dembrandt как npm-пакета.
+suggests: [web-color, design-system-tokens]
+stacks: [interface]
+source: arvindrk/extract-design-system, MIT, ставится как есть
+status: черновик
+requires_env: []
+needs: []
+

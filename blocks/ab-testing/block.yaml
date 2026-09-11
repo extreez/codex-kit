@@ -1,0 +1,17 @@
+id: ab-testing
+title: A/B-тестирование
+summary: >-
+  Два скилла на разные фазы одного процесса. experiment-design —
+  спроектировать тест до запуска: фреймворк гипотезы, sample size,
+  traffic allocation, проблема подглядывания (peeking), ICE-приоритизация
+  бэклога гипотез, темп 4-8 экспериментов/месяц, win rate 20-30%, плейбук
+  выигрышных паттернов. experiment-analysis — разобрать уже собранные
+  данные теста: значимость, доверительный интервал, SRM и novelty-эффекты,
+  таблица решений ship/extend/stop, генерирует Python-скрипт под расчёты.
+suggests: []
+stacks: [ab-testing]
+source: coreyhaines31/marketingskills (MIT) + phuryn/pm-skills (MIT), дословно/перевод — см. атрибуцию в каждом SKILL.md
+status: черновик
+requires_env: []
+needs: []
+

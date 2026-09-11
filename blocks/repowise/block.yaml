@@ -1,0 +1,10 @@
+id: repowise
+title: Карта кода — repowise
+summary: CLI + MCP индексатор кодовой базы — граф зависимостей, git-история, health-score, мёртвый код. Рекомендован из group codebase-map, ставится как есть
+suggests: [dev-onboarding]
+stacks: [dev]
+source: repowise-dev/repowise
+status: рабочий
+requires_env: []
+needs: []
+

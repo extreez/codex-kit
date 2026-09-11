@@ -1,0 +1,20 @@
+id: dev-ops
+title: Пайплайн, решения, история изменений
+summary: Четыре смежные задачи готовности к поставке под одним роутером — CI/CD-пайплайн, ADR, changelog, база наблюдаемости
+suggests: []
+stacks: [dev]
+source: >-
+  собственный (синтез addyosmani/agent-skills
+  ci-cd-and-automation+documentation-and-adrs+observability-and-instrumentation,
+  alirezarezvani/claude-skills CI/CD Builder+Changelog Generator). Раздел ADR
+  довнесён форматом (статусы, коды POS/NEG/ALT) из github/awesome-copilot,
+  skill create-architectural-decision-record (MIT) — конкретный шаблон вместо
+  отдельного конкурирующего блока на том же месте. Раздел CI/CD довнесён
+  конкретным гейтом (test → build → terraform plan/apply → deploy манифестов)
+  и подразделом GitOps по паттерну DevCloudNinjas/DevOps-Projects (MIT,
+  project-33/34) — существующий раздел уже покрывал принцип, довнесение
+  добавило конкретику, не новый блок.
+status: черновик
+requires_env: []
+needs: []
+

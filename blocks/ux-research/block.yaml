@@ -1,0 +1,31 @@
+id: ux-research
+title: UX/продуктовое исследование
+summary: >-
+  6 скиллов: persona-and-journey (персоны из данных + скрипт-генератор,
+  journey mapping, usability-тесты, синтез), customer-research (бывш.
+  real-user-research, переименован вслед за апстримом — анализ готовых
+  материалов + mining Reddit/G2 + интервью/опросы напрямую),
+  synthetic-research (обёртка над claude-persona — AI-панель персон, когда
+  реальных пользователей нет), quick-research-templates (роутер на 10
+  шаблонов вывода: персоны, сегменты, sentiment, journey map, TAM/SAM/SOM,
+  конкурентный анализ, скрипт/саммари интервью, opportunity solution
+  tree), pricing (бывш. pricing-research, переименован вслед за
+  апстримом — методология Van Westendorp/MaxDiff/Gabor-Granger/conjoint +
+  AI-agent readiness прайсинг-страницы + ссылка на synthetic-research как
+  движок симуляции), competitor-profiling (Firecrawl+DataForSEO конвейер в
+  структурированный профиль конкурента)
+suggests: [ux-writing, web-fundamentals]
+stacks: [ux-research]
+source: >-
+  alirezarezvani/claude-skills (product-team/skills/ux-researcher-designer),
+  MIT, router на русском + references/scripts дословно; coreyhaines31/
+  marketingskills (customer-research, pricing/references/research-methods,
+  competitor-profiling), MIT, router на русском + references дословно,
+  competitor-profiling дословно целиком; takechanman1228/claude-persona,
+  MIT, тонкая обёртка (апстрим не копируется); phuryn/pm-skills
+  (pm-market-research + pm-product-discovery, 10 шаблонов), MIT, router
+  собран заново + шаблоны дословно
+status: черновик
+requires_env: []
+needs: []
+

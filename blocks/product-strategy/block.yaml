@@ -1,0 +1,19 @@
+id: product-strategy
+title: Продуктовая/бизнес-стратегия
+summary: >-
+  4 скилла: strategy-canvases (Product Strategy/Startup/Lean/Business
+  Model Canvas — 4 канваса разного масштаба), vision-and-value (product
+  vision + value proposition), monetization (модель монетизации + ценовая
+  стратегия, ссылается на ux-research/pricing за данными о готовности
+  платить), strategic-frameworks (SWOT/PESTLE/Porter's Five Forces/Ansoff
+  Matrix). Весь плагин pm-product-strategy (12 из 12 скиллов).
+suggests: [product-discovery, product-execution, ux-research]
+stacks: [process]
+source: >-
+  phuryn/pm-skills, `pm-product-strategy/skills/*` (12 из 12 скиллов
+  плагина), MIT, роутеры собраны заново на русском, файлы templates/*.md
+  дословно на английском с атрибуцией в каждом.
+status: черновик
+requires_env: []
+needs: []
+

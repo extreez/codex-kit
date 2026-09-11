@@ -1,0 +1,16 @@
+id: web-taste
+title: Ревью крафта и anti-slop гейт
+summary: craft-review — визуальный polish (concentric radius, optical alignment, shadow-vs-border, hero-enrichment) + методология одного вердикта; gate-check — 58 бинарных гейтов hallmark + 3 audit-скрипта tastemaker
+suggests: [impeccable, taste-skill]
+stacks: [interface]
+source: >-
+  синтез: better-interface.md (Figma Community, уникальная часть после
+  вычета доменов web-a11y-code/web-fundamentals/ux-writing/web-motion),
+  hallmark/hero-enrichment.md + slop-test.md (Nutlope/hallmark),
+  jakubkrehel/skills break+variant+explain-interface (техники),
+  tastemaker/scripts check_contrast.py+anti_slop_scan.py+audit_motion.py
+  (codeswithroh/tastemaker, вендорено дословно, MIT)
+status: черновик
+requires_env: []
+needs: [web-a11y-code, web-fundamentals, web-motion, ux-writing]
+

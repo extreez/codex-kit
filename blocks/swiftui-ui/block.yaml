@@ -1,0 +1,14 @@
+id: swiftui-ui
+title: SwiftUI/Apple platform (нативный код)
+summary: >-
+  ameyalambat128/swiftui-skills — гайдлайны SwiftUI/Apple platform,
+  извлечённые из внутренней документации Xcode (не из training data
+  модели). Требует локальную установку Xcode — macOS-only, на Windows/
+  Linux не установить. Ставится как есть, ситуативный.
+suggests: [mobile-ui]
+stacks: [interface]
+source: ameyalambat128/swiftui-skills, MIT, ставится как есть
+status: черновик
+requires_env: []
+needs: []
+

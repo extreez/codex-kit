@@ -1,0 +1,22 @@
+id: geo-optimize
+title: GEO composite score
+summary: Composite score цитируемости в AI-ответах (25% citability/20% brand authority/20% E-E-A-T/15% technical/10% schema/10% platform), параллельные субагенты по зонам, объединение в отчёт
+suggests: [geo-content, llms-txt]
+stacks: [seo]
+source: >-
+  zubair-trabzada/geo-seo-claude, лицензия MIT, методология и веса
+  composite score пересказаны и оформлены как проверяемый скилл (25%
+  citability/20% brand authority/20% E-E-A-T/15% technical/10% schema/10%
+  platform, веса из README источника). Логика скоринга (citability_scorer.py,
+  brand_scanner.py) описана как методология, которую агент выполняет
+  рассуждением и чтением файлов. Исходный Python-код НЕ скопирован и не
+  выполняется (нет возможности проверить лицензию каждого файла построчно,
+  риск копировать исполняемый код без полной проверки). Исключение -
+  проверка robots.txt на AI-краулеров (`scripts/check-robots-ai-crawlers.py`):
+  собственная реализация с нуля, не порт zubair, список user-agent
+  общеизвестный, логика разбора robots.txt тривиальная. Точное совпадение
+  строк не требует LLM-рассуждения, скрипт быстрее и надёжнее
+status: черновик
+requires_env: []
+needs: []
+

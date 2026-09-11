@@ -1,0 +1,5 @@
+id: academic
+title: Научная работа
+source: repo/
+blocks: [academic-research, academic-review, academic-loop, research-deep, fact-check, de-ai-text]
+

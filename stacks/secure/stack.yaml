@@ -1,0 +1,5 @@
+id: secure
+title: Безопасность
+source: repo/
+blocks: [sec-policy, sec-audit, sec-tests, sec-attack, sec-loop]
+

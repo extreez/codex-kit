@@ -1,0 +1,23 @@
+id: deploy-terraform
+title: Провижининг инфраструктуры через Terraform
+summary: >-
+  Модульная структура (vpc/rds/alb/iam/...), remote state с блокировкой,
+  типизированные переменные без секретов открытым текстом, план-затем-применение
+  как гейт CI, OpenTofu как открытая альтернатива.
+suggests: [deploy-kubernetes, deployment-readiness, db-postgres-best-practices]
+stacks: []
+source: >-
+  собственный синтез по структуре и паттернам из DevCloudNinjas/DevOps-Projects
+  (MIT) — project-11 (модульный two-tier AWS: vpc/security-group/rds/alb/iam/
+  autoscaling/route53, S3+DynamoDB backend), project-33/34 (terraform plan
+  -detailed-exitcode как гейт CI: apply только при обнаруженном дрейфе,
+  окружение через backend-config per branch), project-37/46/48 (EKS-провижининг),
+  project-52 (OpenTofu). Раздел про типизацию/sensitive переменных и implicit
+  dependency через ссылки на output — не пересказ источника, а исправление
+  антипаттерна, который в исходных project.tf встречается буквально (RDS-PWD
+  без sensitive, переменные без type, депенденси только через явный depends_on
+  вместо ссылки на атрибут).
+status: черновик
+requires_env: []
+needs: []
+

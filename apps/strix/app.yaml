@@ -1,0 +1,9 @@
+id: strix
+title: Strix — автономный пентестер
+summary: Внешний агент-пентестер (usestrix/strix). Сканирует свой проект в песочнице, отчёт пишет в проект. Ставится руками, в стек secure не входит
+kind: репо-инструмент
+source: https://github.com/usestrix/strix
+requires_env: [STRIX_LLM, LLM_API_KEY]
+requires: [docker]
+status: обёртка
+

@@ -1,0 +1,10 @@
+id: sec-audit
+title: Аудит безопасности
+summary: Детект стека, недоверчивые субагенты по зонам чеклиста, перекрёстная верификация, отчёт с файлом и строкой
+suggests: [sec-policy, sec-tests, sec-attack]
+stacks: [secure]
+source: собственный
+status: рабочий
+requires_env: []
+needs: [sec-policy]
+

@@ -1,0 +1,14 @@
+id: seo-local
+title: Локальный SEO
+summary: Google Business Profile аудит, NAP consistency, стратегия цитирований
+suggests: [seo-audit]
+stacks: [seo]
+source: >-
+  every-app/open-seo, лицензия не подтверждена в README, синтез своими
+  словами (local-seo — сама процедура, не текст); calm-north/seojuice-skills,
+  лицензия MIT, синтез своими словами (rank-local — GBP-аудит, NAP
+  consistency, citation strategy)
+status: черновик
+requires_env: []
+needs: []
+

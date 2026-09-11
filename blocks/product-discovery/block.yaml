@@ -1,0 +1,24 @@
+id: product-discovery
+title: Продуктовый discovery
+summary: >-
+  2 скилла: discovery-cycle (идея → рискованное допущение → дешёвый
+  эксперимент, каждый шаг в варианте «существующий продукт»/«новый с
+  нуля», 6 шаблонов), backlog-triage (приоритизация допущений/фич,
+  категоризация заявок клиентов, 3 шаблона). Остаток плагина
+  pm-product-discovery — 4 скилла (interview-script, summarize-interview,
+  opportunity-solution-tree, metrics-dashboard) уже забраны в
+  `ux-research/quick-research-templates` и `metrics/product-metrics`,
+  здесь не дублируются. Команда `/discovery-cycle` фиксирует порядок
+  шагов (идея → допущения → приоритизация → эксперимент), один проход
+  без субагентов.
+suggests: [product-execution, product-strategy]
+stacks: [process]
+source: >-
+  phuryn/pm-skills, `pm-product-discovery/skills/*` (9 из 13 скиллов
+  плагина, остальные 4 уже в других блоках, см. summary), MIT, роутеры
+  собраны заново на русском, файлы templates/*.md дословно на английском
+  с атрибуцией в каждом.
+status: черновик
+requires_env: []
+needs: []
+

@@ -1,0 +1,10 @@
+id: readme-badges
+title: Бейджи и графики README
+summary: CLI shieldcn + его официальный skill — детект стека, категоризированные бейджи, star-history/commit-графики, без shields.io
+suggests: [readme-polish]
+stacks: [dev]
+source: jal-co/shieldcn
+status: рабочий
+requires_env: []
+needs: []
+

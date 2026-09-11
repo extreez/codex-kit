@@ -1,0 +1,10 @@
+id: socraticode
+title: Карта кода — SocratiCode
+summary: MCP индексатор с гибридным поиском (семантика + ключевые слова), индексирует и не-код (схемы БД, API-спеки). Конкурент repowise из group codebase-map
+suggests: []
+stacks: [dev]
+source: giancarloerra/SocratiCode
+status: рабочий
+requires_env: []
+needs: []
+

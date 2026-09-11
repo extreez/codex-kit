@@ -1,0 +1,10 @@
+id: dev-onboarding
+title: Карта проекта для человека
+summary: Отчёт-введение в проект для нового человека — поверх графа repowise, если он подключён, иначе ручным проходом
+suggests: []
+stacks: [dev]
+source: собственный (синтез alirezarezvani/claude-skills Codebase Onboarding)
+status: черновик
+requires_env: []
+needs: []
+

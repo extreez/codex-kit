@@ -1,0 +1,22 @@
+id: academic-loop
+title: Автоматика стека academic
+summary: >-
+  Цикл поверх связки academic-research -> academic-review. Условие остановки -
+  не ощущение готовности статьи, а вердикт панели academic-review: раунд
+  закрыт, когда самый строгий вердикт панели (accept|minor-revision|
+  major-revision|reject, формат из academic-review/agents/paper-reviewer.md) -
+  accept или minor-revision. После первого раунда academic-research правит
+  docs/paper.md только по конкретным находкам ревью, не переписывает статью
+  заново (patch-not-regenerate, тот же дух, что в
+  research-deep/agents/research-patcher.md). Между раундами - traceability-
+  таблица (замечание -> что изменено -> подтверждено ли), замечание не
+  считается закрытым без повторной проверки места правки. Предел раундов N
+  (по умолчанию 3) - спросить пользователя. По образцу research-loop, включая
+  сборку /goal для прогона без присмотра.
+suggests: []
+stacks: [academic]
+source: собственный (по образцу research-loop)
+status: черновик
+requires_env: []
+needs: [academic-research, academic-review]
+

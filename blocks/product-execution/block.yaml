@@ -1,0 +1,24 @@
+id: product-execution
+title: Исполнение продукта/проекта
+summary: >-
+  5 скиллов на день-в-день ведение продукта/проекта: planning-docs (PRD,
+  OKR, outcome-roadmap, справочник 9 фреймворков приоритизации),
+  backlog-formats (user story/job story/WWA/тест-сценарии — 4 формата
+  записи бэклог-айтема), sprint-cycle (планирование спринта + ретро),
+  risk-review (pre-mortem + strategy-red-team — два метода стресс-теста
+  плана), delivery-comms (release notes, саммари встречи — карта
+  стейкхолдеров вынесена в cross-functional-alignment, там был дубль).
+  Не привязано к разработке ПО — применимо к любому проекту с бэклогом
+  и спринтами.
+suggests: [product-strategy, program-delivery, cross-functional-alignment]
+stacks: [process]
+source: >-
+  phuryn/pm-skills, `pm-execution/skills/*` (16 из 16 скиллов плагина,
+  кроме dummy-dataset — off-topic генератор тестовых данных для QA, не
+  про процесс, см. NOTES-process.md), MIT, роутеры собраны заново на
+  русском, файлы templates/*.md дословно на английском с атрибуцией в
+  каждом.
+status: черновик
+requires_env: []
+needs: []
+

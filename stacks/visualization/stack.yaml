@@ -1,0 +1,5 @@
+id: visualization
+title: Визуализация
+source: repo/
+blocks: [diagram-schemas, chart-selection]
+

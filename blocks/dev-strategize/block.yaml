@@ -1,0 +1,10 @@
+id: dev-strategize
+title: Выбор подхода на старте
+summary: Решить стратегию/стек/подход на старте проекта или в спорной точке — доказуемо, не на вкус
+suggests: [kit]
+stacks: [dev]
+source: собственный (синтез AaravKashyap12/advise-project-approach)
+status: черновик
+requires_env: []
+needs: []
+

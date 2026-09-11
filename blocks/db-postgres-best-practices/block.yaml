@@ -1,0 +1,18 @@
+id: db-postgres-best-practices
+title: Postgres best practices (любой проект)
+summary: >-
+  Роутер на 8 категорий правил Postgres по приоритету (query/connection/
+  security-RLS/schema/locking/data-access/monitoring/advanced). Применим без
+  Supabase — отдельный блок, supabase на него needs.
+suggests: []
+stacks: [prod]
+source: >-
+  supabase/agent-skills, skill supabase-postgres-best-practices v1.1.1 (MIT,
+  Supabase) - структура категорий и приоритетов взята дословно из SKILL.md
+  роутера. Детальные 33 файла references/ (примеры SQL по каждому правилу) не
+  скопированы построчно из-за объёма - блок фиксирует приоритетный фреймворк
+  и ссылается на исходный открытый репозиторий за конкретными примерами.
+status: черновик
+requires_env: []
+needs: []
+

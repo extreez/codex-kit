@@ -1,0 +1,10 @@
+id: dev-build
+title: Сборка по тонким срезам
+summary: Спеку или тикет режет на TDD-срезы с проверяемым концом каждого, передаёт срезы дальше в loop-build
+suggests: [dev-loop]
+stacks: [dev]
+source: собственный (синтез mattpocock/skills tdd+implement, addyosmani/agent-skills test-driven-development+incremental-implementation)
+status: черновик
+requires_env: []
+needs: []
+

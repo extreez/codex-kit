@@ -1,0 +1,24 @@
+id: program-delivery
+title: Управление программой/проектом
+summary: >-
+  2 скилла по 5 инструментов: program-planning (capacity-planning,
+  dependency-map, prioritisation-framework, program-roadmap,
+  scoping-framework — планирование до старта) и delivery-execution
+  (delivery-plan, blocker-triage, risk-register, launch-readiness,
+  retrospective — ведение во время исполнения). Обобщено от исходной
+  темы «UX-программа» до любого проекта/программы с несколькими
+  командами, код или нет — не важно. Команда `/blocker-scan` — снимок
+  блокеров+рисков одним проходом, рассчитана на повтор через
+  `/loop <интервал> /blocker-scan`, не на разовый запуск.
+suggests: [product-execution, cross-functional-alignment]
+stacks: [process]
+source: >-
+  Owl-Listener/ux-pgm-skills, плагины `program-planning` и
+  `delivery-execution` (10 из 30 скиллов коллекции), MIT, роутеры
+  собраны заново на русском с обобщением от UX до любого проекта, файлы
+  templates/*.md дословно на английском (исходный текст уже не
+  UX-специфичен) с атрибуцией в каждом.
+status: черновик
+requires_env: []
+needs: []
+

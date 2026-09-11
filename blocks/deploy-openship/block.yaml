@@ -1,0 +1,16 @@
+id: deploy-openship
+title: Self-hosted деплой через Openship
+summary: >-
+  Синтез методологии self-hosted деплой-платформы Openship: выбор режима
+  (десктоп/сервер/cloud), Compose vs bare режим, пятистадийный конвейер
+  detect→build→provision→route/TLS→push-to-deploy.
+suggests: [deployment-readiness]
+stacks: []
+source: >-
+  github.com/oblien/openship, README (Apache 2.0) - методология пересказана
+  своими словами по фактам README, не копия кода. Лицензия разрешает
+  переиспользование.
+status: черновик
+requires_env: []
+needs: []
+

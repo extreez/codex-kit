@@ -1,0 +1,32 @@
+id: team-leadership
+title: Лидерство команды
+summary: >-
+  6 скиллов по 5-6 инструментов (32 всего): people-management (1:1,
+  фидбек, тяжёлые разговоры, план роста, performance review, карьерная
+  лестница), team-building (найм, job spec, онбординг, портфолио,
+  психологическая безопасность, структура команды), team-strategy
+  (стратегия функции, vision, investment case, принципы, приоритизация
+  по портфелю), org-influence (адвокация функции, executive narrative,
+  карта влияния, managing up, ресурсы), operating-cadence (decision
+  rights, делегирование, ревью на масштабе, ритм лидерской команды,
+  каденция планирования), leadership-craft (изменения, конфликты, этика,
+  менторство, self-leadership). Про менеджмент ЛЮДЕЙ, не задач/проектов
+  — отдельная тема от process-стека (product-execution/program-delivery/
+  cross-functional-alignment/process-design/program-metrics/
+  product-discovery/product-strategy), не пересекается. Команда
+  `/one-on-one-prep` — подготовка одной встречи, рассчитана на повтор
+  через `/loop <интервал> /one-on-one-prep <имя>` под каданс 1:1 с
+  конкретным человеком.
+suggests: []
+stacks: [team-leadership]
+source: >-
+  Owl-Listener/design-leadership-skills, все 6 плагинов коллекции (32
+  скилла), MIT, роутеры собраны заново на русском, обобщены от дизайн-
+  лидерства до любой функции (кроме нескольких пунктов team-building,
+  специфичных дизайну — portfolio-review). Файлы templates/*.md дословно
+  на английском (текст местами говорит «design» — читать как свою
+  функцию) с атрибуцией в каждом.
+status: черновик
+requires_env: []
+needs: []
+

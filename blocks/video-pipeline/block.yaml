@@ -1,0 +1,31 @@
+id: video-pipeline
+title: Конвейер производства видео
+summary: >-
+  5 скиллов и 3 скрипта поверх чужих движков. route (вход: смотрит папку
+  проекта и собирает список шагов, у которых есть вход; ветки не выбирает,
+  шаг без входа не запускается) → script (сценарий, сумма битов равна
+  длительности, текст считается в секундах) → storyboard (раскадровка на
+  холсте /design, сужается до недостающих планов) → loops (бесшовный клип
+  тремя способами плюс библиотека переиспользуемых кусков) + previz
+  (камера в Blender через официальный MCP, фоновый режим). Скрипты:
+  transcribe_local.py (whisper.cpp в формат кеша video-use, облако не
+  трогается), export_fcp7.py (композиция HyperFrames в xmeml v5 для
+  Premiere и DaVinci), loop_check.py (перцептивный хеш первого и
+  последнего кадра, без зависимостей). Справочники: пресеты переходов,
+  библиотека звуковых эффектов.
+suggests: [video-watch, figma-canvas, web-motion]
+stacks: []
+source: >-
+  Своего движка блок не несёт. HyperFrames (heygen-com, Apache 2.0) -
+  композиция, моушн, переходы, аудио-микс, рендер, ставится как есть со
+  своими 19 скиллами. video-use (browser-use, MIT) - автовырез тишины и
+  слов-паразитов, субтитры, ставится как есть. creative-skill и
+  gcv-kie-cli (extreez) - генерация через kie.ai со сметой и
+  подтверждением, см. apps/. Blender MCP (Blender Foundation,
+  projects.blender.org/lab/blender_mcp) - превиз. MOSS-TTS-Nano (OpenMOSS,
+  Apache 2.0) - синтез речи на CPU. Три скрипта написаны здесь, потому что
+  готовых нет.
+status: черновик
+requires_env: [KIE_API_KEY]
+needs: [ffmpeg, node>=22, python>=3.10, whisper.cpp]
+

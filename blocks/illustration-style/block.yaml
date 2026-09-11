@@ -1,0 +1,13 @@
+id: illustration-style
+title: Стиль иллюстраций
+summary: >-
+  Гайдлайн иллюстраций для продукта: geometric/organic, flat/dimensional,
+  цвет и градиенты, дизайн персонажей, 5 типов иллюстраций (spot/hero/
+  empty-state/onboarding/error), правила применения.
+suggests: [web-fundamentals, web-color]
+stacks: [interface]
+source: Owl-Listener/designer-skills, ui-design/skills/illustration-style, MIT, перевод
+status: черновик
+requires_env: []
+needs: []
+

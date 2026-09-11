@@ -1,0 +1,19 @@
+id: deploy-vercel
+title: Деплой на Vercel
+summary: >-
+  Дерево решений линковки/деплоя (git push vs vercel deploy vs link+deploy),
+  конфигурация vercel.json (routes/crons), агентские инструменты самого
+  Vercel (AGENTS.md, vercel skills, vercel mcp, llms.txt).
+suggests: [deployment-readiness]
+stacks: []
+source: >-
+  vercel-labs/agent-skills (deploy-to-vercel) - репозиторий БЕЗ файла LICENSE
+  (все права по умолчанию), поэтому текст скилла не копировался дословно -
+  методология (дерево решений линковки/деплоя, шаги проверки состояния)
+  пересказана своими словами. Дополнено фактами с официального сайта/CLI-доки
+  vercel.com (agent init, vercel skills, vercel mcp, llms.txt) - открытая
+  документация, не код скилла.
+status: черновик
+requires_env: []
+needs: []
+

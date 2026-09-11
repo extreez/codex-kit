@@ -1,0 +1,15 @@
+id: material3-ui
+title: Material Design 3 (Android/Compose)
+summary: >-
+  hamen/material-3-skill — Material Design 3, основной фокус Jetpack
+  Compose, вторично Flutter, ограниченно Web (@material/web в maintenance
+  mode, M3 Expressive на вебе не реализован). 30+ компонентов, токены,
+  теминг, MD3 compliance audit на 10 категорий. Ставится как есть,
+  ситуативный.
+suggests: [mobile-ui]
+stacks: [interface]
+source: hamen/material-3-skill, MIT, ставится как есть
+status: черновик
+requires_env: []
+needs: []
+

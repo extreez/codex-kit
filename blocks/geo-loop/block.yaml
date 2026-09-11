@@ -1,0 +1,14 @@
+id: geo-loop
+title: Цикл GEO до порога
+summary: Цикл оценка-фикс-переоценка composite GEO score до порога 70/100, по образцу sec-loop
+suggests: [geo-optimize]
+stacks: [seo]
+source: >-
+  Собственный, по образцу `sec-loop` (структура цикла и Stop-хук
+  адаптированы под числовой гейт composite score вместо счётчика находок);
+  сам composite score — из методологии zubair-trabzada/geo-seo-claude
+  (MIT), см. `geo-optimize/block.yaml`
+status: черновик
+requires_env: []
+needs: [geo-optimize]
+

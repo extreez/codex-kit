@@ -1,0 +1,15 @@
+id: deploy-azure-appservice
+title: Деплой Python на Azure App Service
+summary: >-
+  8-шаговый workflow деплоя Flask/Django/FastAPI на Azure App Service Linux:
+  RG→Plan→Web App, startup command по фреймворку, SCM_DO_BUILD_DURING_DEPLOYMENT,
+  жёсткий запрет пост-деплой верификации и устаревшего az webapp up.
+suggests: [deployment-readiness]
+stacks: []
+source: >-
+  microsoft/azure-skills, skill python-appservice-deploy v1.1.1 (MIT,
+  Microsoft) - взято дословно, лицензия разрешает.
+status: черновик
+requires_env: []
+needs: []
+

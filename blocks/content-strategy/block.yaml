@@ -1,0 +1,29 @@
+id: content-strategy
+title: Контент-стратегия и производство
+summary: >-
+  4 скилла + 1 справочник. content-strategy — Searchable/Shareable
+  планирование, контентные столпы, приоритизация по формуле, календарь
+  60/30/10, ORB-дистрибуция. content-production — 3-режимный конвейер
+  статьи (Research&Brief/Draft/Optimize&Polish), защита от тонкого
+  контента и каннибализации ключевых слов. content-governance —
+  жизненный цикл контента SIGNAL→PUBLISHED→LEARNING, роли одобрения.
+  expert-panel-review — переиспользуемый паттерн (панель N экспертов,
+  порог балла, до 3 раундов правки), на него ссылаются copywriting и
+  social-media. references/tactics-catalog.md — чек-лист тактик по
+  16 категориям.
+suggests: [positioning, copywriting, brand-voice, metrics]
+stacks: [marketing]
+source: >-
+  coreyhaines31/marketingskills (skills/content-strategy, skills/
+  content-production), MIT + alirezarezvani/claude-skills (marketing-
+  skill/skills/content-strategy — тот же фреймворк Searchable/Shareable,
+  синтезированы в один текст, не установлены отдельно), MIT;
+  ericosiu/ai-marketing-skills (content-os-portable-starter — governance
+  без коннекторов/креденшелов; паттерн expert-panel-scoring из
+  content-ops/autoresearch/content-eval/x-longform-post, вынесен один
+  раз), MIT. references/tactics-catalog.md — синтезированная компиляция
+  по мотивам marketing-ideas (alirezarezvani), не дословный список.
+status: черновик
+requires_env: []
+needs: []
+

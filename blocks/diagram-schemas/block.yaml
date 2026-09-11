@@ -1,0 +1,19 @@
+id: diagram-schemas
+title: Диаграммы архитектуры и процессов
+summary: >-
+  Схемы (не данные, не код): архитектура, workflow, sequence, dataflow,
+  lifecycle. Типизированный JSON-черновик перед рендером в HTML+SVG
+  (дисциплина Archify-Labs/archify), числовой style-guide и 7 семантических
+  паттернов (cathrynlavery/diagram-design, references/semantic-patterns.md
+  дословно). Куратор-подмножество типов, не все 39, полный список источника
+  доступен по ссылке. Палитру не строит с нуля, ссылается на web-color.
+suggests: [web-color, checklist-design]
+stacks: [visualization]
+source: >-
+  Archify-Labs/archify (MIT, синтез дисциплины authoring-flow, не код
+  рендерера), cathrynlavery/diagram-design (MIT, style-guide синтезирован
+  под свои числа, references/semantic-patterns.md дословный перевод)
+status: черновик
+requires_env: []
+needs: []
+

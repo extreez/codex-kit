@@ -1,0 +1,15 @@
+id: mobile-ui
+title: Мобильный UI (общий, не платформенный)
+summary: >-
+  ceorkm/mobile-app-ui-design — общие принципы мобильного UI, не привязан
+  к конкретной платформе (в отличие от swiftui-ui/material3-ui). 5-шаговый
+  процесс проектирования, конвенции 9+ индустрий (AI, крипто, финансы,
+  здоровье), эмоциональный дизайн (Peak-End Rule), 60/30/10, 8pt grid,
+  thumb zone. Ставится как есть, ситуативный — не в каждый стек.
+suggests: [swiftui-ui, material3-ui]
+stacks: [interface]
+source: ceorkm/mobile-app-ui-design, MIT (по README), ставится как есть
+status: черновик
+requires_env: []
+needs: []
+

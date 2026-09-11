@@ -1,0 +1,25 @@
+id: positioning
+title: Позиционирование и запуск
+summary: >-
+  2 скилла. product-marketing-context — собирает единый файл
+  `.agents/product-marketing.md` (14 секций: аудитория, персоны,
+  конкуренты, дифференциаторы, голос бренда, доказательства, тарифы,
+  каналы), читают его первым шагом все остальные блоки маркетингового
+  стека. positioning-gtm — позиционирование по April Dunford
+  (альтернативы→атрибуты→ценность→сегмент→категория), positioning map
+  2x2, боевые карточки против конкурентов, GTM-запуск (ORB-модель
+  каналов, критерий готовности SLC вместо MVP, три фазы запуска).
+suggests: [ux-research, brand-voice, content-strategy]
+stacks: [marketing]
+source: >-
+  alirezarezvani/claude-skills (marketing-skill/skills/marketing-context,
+  marketing-strategy-pmm, launch-strategy), MIT, router на русском,
+  структура секций расширена; coreyhaines31/marketingskills (skills/
+  launch), MIT; anthropics/knowledge-work-plugins (marketing/skills/
+  competitive-brief, только battlecard-фрагмент), Apache-2.0; April
+  Dunford positioning methodology (Obviously Awesome) — пересказ
+  общеизвестной публичной методологии, не копия текста книги.
+status: черновик
+requires_env: []
+needs: []
+

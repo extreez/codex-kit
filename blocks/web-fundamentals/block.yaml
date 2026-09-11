@@ -1,0 +1,16 @@
+id: web-fundamentals
+title: Фундамент интерфейса
+summary: perception (6 законов гештальта + почему дизайн вообще работает), platform-conventions (iOS HIG vs Material 3), layout-spacing (принципы группировки + точные CSS-числа), typography (шкала/measure/CSS-механика)
+suggests: [web-taste]
+stacks: [interface]
+source: >-
+  синтез Owl-Listener/designer-skills (ui-design: 6 law-of-*, aesthetic-usability,
+  von-restorff-effect, platform-conventions — дословно; layout-grid/spacing-system/
+  readable-measure — как концептуальная рамка поверх jakubkrehel) и
+  jakubkrehel/skills better-layout+better-typography (костяк: точные CSS-числа
+  и код, дословно). Не выбор одного источника — Owl даёт психологию восприятия,
+  jakubkrehel даёт CSS-реализацию, уровни разные, не спорят.
+status: черновик
+requires_env: []
+needs: []
+

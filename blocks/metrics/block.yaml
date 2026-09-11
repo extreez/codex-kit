@@ -1,0 +1,33 @@
+id: metrics
+title: Метрики продукта и маркетинга
+summary: >-
+  product-metrics (3 скилла phuryn/pm-skills: north-star-metric — три игры
+  бизнеса Attention/Transaction/Productivity + 7 критериев NSM,
+  metrics-dashboard — слои North Star/Input/Health/Business + 4 критерия
+  Бена Йосковица, cohort-analysis — retention-кривые и feature adoption),
+  analytics-implementation (внедрение трекинга: naming conventions,
+  event-library, GA4/GTM setup, UTM — coreyhaines31/marketingskills),
+  attribution (модели атрибуции first/last-touch/linear/time-decay/
+  U-shaped/data-driven, MTA/MMM/incrementality, сверка конфликтующих
+  цифр между инструментами — coreyhaines31/marketingskills),
+  analytics-readback (переиспользуемый паттерн — не считать
+  маркетинговое изменение доказанным без замера после публикации,
+  формат baseline/candidate/promote-rollback, на него ссылаются
+  seo-loop/geo-loop/paid-ads/social-media/content-strategy/
+  email-outbound)
+suggests: []
+stacks: [metrics, marketing]
+source: >-
+  phuryn/pm-skills, MIT, дословно (north-star-metric, metrics-dashboard,
+  cohort-analysis — router на русском); coreyhaines31/marketingskills, MIT,
+  дословно (analytics, attribution — router на русском, reference-файлы
+  и attribution.md на английском, техническая точность важна); собственный
+  синтез (references/search-console-tracking.md — добавлено при сборке
+  стека seo, закрывает пробел GSC/рэнк-трекинга, не порт стороннего
+  источника); ericosiu/ai-marketing-skills (closed-loop-analytics-upgrade
+  — паттерн analytics-readback, обобщён и вынесен как отдельный скилл),
+  MIT
+status: черновик
+requires_env: []
+needs: []
+

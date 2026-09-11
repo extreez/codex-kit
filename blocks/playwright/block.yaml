@@ -1,0 +1,13 @@
+id: playwright
+title: Playwright (браузерные автотесты)
+summary: >-
+  Тонкая обёртка над официальным Playwright Test — установка, структура
+  теста, запуск, CI. Для полноценных регрессионных/e2e автотестов, не для
+  разовой проверки фичи в разработке (см. webapp-testing).
+suggests: [webapp-testing]
+stacks: [dev]
+source: playwright.dev, официальный инструмент, ставится как есть
+status: черновик
+requires_env: []
+needs: []
+

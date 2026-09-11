@@ -1,0 +1,23 @@
+id: seo-content
+title: Контентная стратегия SEO
+summary: Keyword research (tiered + intent), кластеризация hub-and-spoke с gap-анализом, content brief, E-E-A-T гейт качества, генерация programmatic-страниц
+suggests: [seo-audit]
+stacks: [seo]
+source: >-
+  every-app/open-seo, лицензия не подтверждена в README, синтез своими
+  словами (keyword-research, keyword-clustering — сама процедура, не текст);
+  calm-north/seojuice-skills, лицензия MIT, синтез своими словами
+  (find-keywords — tiered head/body/long-tail + intent classification;
+  build-clusters — hub-and-spoke + gap-анализ; brief — SERP-анализ+outline+
+  word count); aaron-he-zhu/seo-geo-claude-skills (архив) /
+  aaron-marketing-skills, лицензия Apache-2.0, синтез своими словами
+  (content-gap-analysis — сама идея сравнения с конкурентами; E-E-A-T гейт
+  качества контента — собственный чек-лист по мотивам названного в источнике
+  бенчмарка CORE-EEAT, точные 80 пунктов бенчмарка не читались построчно —
+  не выдуманы, синтезирован разумный чеклист на ту же тему); coreyhaines31/
+  marketingskills, лицензия MIT, синтез своими словами (programmatic-seo —
+  генерация страниц по шаблону и данным)
+status: черновик
+requires_env: []
+needs: []
+

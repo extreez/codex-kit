@@ -1,0 +1,10 @@
+id: understand-anything
+title: Карта кода — Understand Anything
+summary: Статика + LLM-анализ бизнес-логики, визуальный дашборд для человека. Конкурент repowise из group codebase-map, дороже по токенам, не под запросы агента
+suggests: []
+stacks: [dev]
+source: Egonex-AI/Understand-Anything
+status: рабочий
+requires_env: []
+needs: []
+

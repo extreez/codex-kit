@@ -1,0 +1,10 @@
+id: readme-polish
+title: Оформление README
+summary: Переверстать README по смыслу проекта — порядок чтения, визуальная иерархия, SVG вместо картинок-скриншотов
+suggests: [readme-badges]
+stacks: [dev]
+source: собственный (синтез oil-oil/beautify-github-readme)
+status: черновик
+requires_env: []
+needs: []
+

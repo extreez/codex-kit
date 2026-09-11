@@ -1,0 +1,10 @@
+id: web-states
+title: Инвентаризация состояний
+summary: Разворачивает экран/компонент/флоу в полный набор состояний (6 семейств) и переходов между ними — что забыто, помимо happy path
+suggests: [web-taste]
+stacks: [interface]
+source: Figma Community `ui-state-expander`, дословно с переводом
+status: черновик
+requires_env: []
+needs: []
+

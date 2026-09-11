@@ -1,0 +1,10 @@
+id: tgrep
+title: Быстрый поиск: tgrep
+summary: Триграммный индекс поверх regex-поиска (Microsoft, Rust). Ускоряет точный поиск на крупных репозиториях, ставится как есть. Не входит в group codebase-map, другая задача
+suggests: [repowise]
+stacks: []
+source: microsoft/tgrep
+status: рабочий
+requires_env: []
+needs: []
+

@@ -1,0 +1,5 @@
+id: research
+title: Ресёрч
+source: repo/
+blocks: [research-deep, research-loop, fact-check]
+

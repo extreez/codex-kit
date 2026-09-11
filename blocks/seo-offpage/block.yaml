@@ -1,0 +1,17 @@
+id: seo-offpage
+title: Ссылочный профиль и внешние сигналы
+summary: Внутренняя ссылочная структура (hub-and-spoke, orphan detection, anchor audit), поиск линкующихся площадок, оценка внешних сигналов
+suggests: [seo-audit, seo-content]
+stacks: [seo]
+source: >-
+  calm-north/seojuice-skills, лицензия MIT, синтез своими словами
+  (fix-linking — hub-and-spoke/orphan detection/anchor audit; build-links —
+  linkable asset mapping + prospect scoring); every-app/open-seo, лицензия
+  не подтверждена в README, синтез своими словами (link-prospecting — сама
+  процедура поиска площадок, не текст); aaron-he-zhu/seo-geo-claude-skills
+  (архив) / aaron-marketing-skills, лицензия Apache-2.0, синтез своими
+  словами (offsite-signal-analyzer — оценка внешних сигналов домена)
+status: черновик
+requires_env: []
+needs: []
+

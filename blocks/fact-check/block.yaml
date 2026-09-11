@@ -1,0 +1,21 @@
+id: fact-check
+title: Фактчекинг текста
+summary: >-
+  Синтез трёх источников: 5-шаговый пайплайн проверки утверждений и тиры
+  источников T1-T5 из blog-factcheck (agricidaniel/claude-blog, лицензия не
+  указана - пересказано своими словами, не дословно), плюс skeptical
+  cite-checking, claim ledger и retraction sweep из hyperresearch и
+  claude-scholar (оба MIT). Паттерн hunter/verifier взят из sec-audit:
+  claim-hunter ищет источник и тир, claim-skeptic пытается опровергнуть
+  подтверждение. Отчёт + claim_ledger.json для повторных проходов.
+suggests: []
+stacks: [research, academic]
+source: >-
+  Синтез: blog-factcheck (agricidaniel/claude-blog, лицензия не указана,
+  пересказ своими словами) + hyperresearch (MIT) + claude-scholar (MIT),
+  техники skeptical cite-checking/claim ledger/retraction sweep. Паттерн
+  hunter/verifier - собственный, по образцу sec-audit.
+status: черновик
+requires_env: []
+needs: []
+

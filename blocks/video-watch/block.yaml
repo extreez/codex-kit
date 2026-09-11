@@ -1,0 +1,23 @@
+id: video-watch
+title: Анализ видео и разбор референсов
+summary: >-
+  3 скилла: watch (что происходит и что звучит, два режима - дешёвый через
+  claude-video на кадрах и транскрипте, глубокий через Gemini Files API со
+  звуком), decompose-ref (разбор референса по семи осям: ритм, склейки,
+  кадр, цвет, типографика, звук, структура; на выходе рецепт для скилла
+  script), word-timing (словные таймкоды через whisper.cpp локально или
+  ElevenLabs Scribe с разделением спикеров). Полезен сам по себе, без
+  производства видео.
+suggests: [video-pipeline, transcribe, social-media]
+stacks: []
+source: >-
+  claude-video (bradautomates/claude-video, MIT) - ставится как есть,
+  дешёвый режим watch. Метод глубокого анализа через Gemini Files API -
+  agentnative.inc/resources/give-agents-video-analysis-skill, скилл написан
+  по схеме статьи, кода оттуда нет. whisper.cpp (ggml-org, MIT) - движок
+  локальной транскрипции. Формат транскрипта совместим с
+  browser-use/video-use (MIT).
+status: черновик
+requires_env: [GEMINI_API_KEY]
+needs: [ffmpeg, yt-dlp]
+

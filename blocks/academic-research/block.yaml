@@ -1,0 +1,39 @@
+id: academic-research
+title: Академическое исследование и черновик статьи
+summary: >-
+  Синтез 7-этапного конвейера claude-scholar (question -> evidence ->
+  experiment -> analysis -> claim -> writing, MIT) и 4-фазной архитектуры
+  генерации claude-scientific-writer (Research -> Structure -> Integration ->
+  Rendering, MIT), упрощённый до формата codex-kit: не пишет литобзор и не
+  проверяет цитаты заново, а переиспользует уже готовые блоки research-deep и
+  fact-check. Добавляет то, чего в них нет: венюспецифичные шаблоны (IMRaD,
+  NSF, конференция), agents/paper-drafter.md, anti-leakage protocol (пробел
+  материала помечается в тексте, не маскируется уверенным тоном), claim-drift
+  guard (вывод не усиливается по шкале ассоциация -> предсказание ->
+  причинность сильнее, чем позволяют заметки литобзора), style calibration по
+  примерам пользователя, таблицу disclosure-требований по изданиям. Форматы:
+  markdown всегда, LaTeX/PDF/DOCX опционально при наличии инструментов в
+  системе (tectonic предпочтительнее pdflatex - не требует полного TeXLive;
+  постеры - beamerposter/tikzposter/baposter). Стили цитирования (APA/IEEE/
+  Vancouver/Chicago/MLA) выбираются вместе с форматом, не отдельно. CONSORT-
+  диаграммы и схемы пайплайна - в LaTeX/Mermaid, не растром. Parallel Search
+  API - опциональный усилитель литобзора наравне с Semantic Scholar/OpenAlex,
+  общий выбор поисковых MCP - см. library/research-search-mcp.
+suggests: []
+stacks: [academic]
+source: >-
+  claude-scholar (MIT, Galaxy-Dawn/claude-scholar) - 7-этапный конвейер,
+  использовано дословно/близко к тексту, лицензия разрешает.
+  claude-scientific-writer (MIT, K-Dense-AI/claude-scientific-writer) -
+  4-фазная архитектура генерации (Research/Structure/Integration/Rendering) и
+  список писательских/ревью-скиллов, использовано дословно/близко к тексту,
+  лицензия разрешает. academic-research-skills (CC-BY-NC 4.0,
+  Imbad0202/academic-research-skills) - идеи пересказаны своими словами, не
+  дословно: Anti-Leakage Protocol, Style Calibration, Disclosure Renderer,
+  Claim-Drift Guard. Литобзор делегирован блоку research-deep, проверка цитат
+  - блоку fact-check, стилевая правка текста - блоку de-ai-text, ни один
+  не переизобретён заново.
+status: черновик
+requires_env: []
+needs: [research-deep, fact-check, de-ai-text]
+

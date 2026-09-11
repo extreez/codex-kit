@@ -1,0 +1,24 @@
+id: prod-incident-response
+title: Прод-инцидент — от объявления до постмортема
+summary: >-
+  Live-фаза: классификация SEV1-4, роль Incident Commander, каданс
+  коммуникации, раннбук первых 15 минут. Постмортем-фаза: blameless-принцип,
+  5 Whys до системной причины, action items с владельцем и сроком, частые
+  ошибки. Снимает пункт "Прод-готовность" из NOTES.md, отложенный до появления
+  реального прода.
+suggests: [deployment-readiness]
+stacks: [prod]
+source: >-
+  alirezarezvani/claude-skills, skill incident-commander (MIT) - живая фаза
+  инцидента (классификация серьёзности, роль IC, коммуникация, раннбук) взята
+  близко к тексту, без вендоринга Python-скриптов (incident_classifier.py,
+  timeline_reconstructor.py, pir_generator.py — этот блок промпт-методология,
+  не обёртка над инструментами; при необходимости добавить отдельно).
+  github/awesome-copilot, skill incident-postmortem (MIT) - постмортем-фаза
+  (5 Whys, шаблон документа, частые ошибки) взята дословно, более детальна,
+  чем встроенный в incident-commander генератор PIR — заменяет его целиком,
+  не дублирует.
+status: черновик
+requires_env: []
+needs: []
+

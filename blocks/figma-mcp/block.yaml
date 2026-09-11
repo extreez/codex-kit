@@ -1,0 +1,10 @@
+id: figma-mcp
+title: Подключение Figma
+summary: Официальный плагин figma@claude-plugins-official (MCP + скиллы figma-use/figma-generate-design/figma-generate-library и др.). Предпосылка для figma-canvas
+suggests: [figma-canvas]
+stacks: [interface]
+source: официальный (figma/mcp-server-guide, developers.figma.com/docs/figma-mcp-server)
+status: черновик
+requires_env: []
+needs: []
+

@@ -1,0 +1,19 @@
+id: process-design
+title: Дизайн процесса команды
+summary: >-
+  1 скилл, 5 инструментов: governance-model, process-retrospective,
+  ritual-design, scaling-playbook, workflow-design. Третий и самый общий
+  altitude ретро в каталоге (после sprint-cycle/retro и
+  program-delivery/delivery-execution/retrospective) — процесс команды
+  в целом, не спринт и не программа.
+suggests: [program-delivery, cross-functional-alignment]
+stacks: [process]
+source: >-
+  Owl-Listener/ux-pgm-skills, плагин `process-design` (5 из 30 скиллов
+  коллекции), MIT, роутер собран заново на русском с обобщением от UX
+  до любой команды, файлы templates/*.md дословно на английском с
+  атрибуцией в каждом.
+status: черновик
+requires_env: []
+needs: []
+

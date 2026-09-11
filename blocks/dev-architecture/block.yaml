@@ -1,0 +1,21 @@
+id: dev-architecture
+title: Границы модуля и контракты
+summary: >-
+  Проектирование границ модуля, API-контрактов и структуры перед реализацией —
+  не пост-фактум ревью, а решение до кода. Обогащено словарём deep-module
+  (deletion test, правило «один адаптер — гипотетический шов, два — реальный»,
+  дизайн для тестируемости, design-it-twice для спорных решений), чтобы
+  не расходиться терминологией с improve-codebase-architecture.
+suggests: [dev-build, improve-codebase-architecture]
+stacks: [dev]
+source: >-
+  собственный (синтез mattpocock/skills codebase-design+improve-codebase-architecture,
+  addyosmani/agent-skills api-and-interface-design, principles-wiki.net).
+  Довнесено дословными формулировками из mattpocock/skills codebase-design
+  (MIT) при разборе кластера прод/деплой/БД: deletion test, правило двух
+  адаптеров, паттерны тестируемости, design-it-twice — вместо отдельного
+  конкурирующего блока с тем же этапом.
+status: черновик
+requires_env: []
+needs: []
+

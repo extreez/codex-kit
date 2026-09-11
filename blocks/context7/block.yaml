@@ -1,0 +1,9 @@
+id: context7
+title: Поиск документации
+summary: CLI ctx7 + skill find-docs — актуальная документация библиотек, без MCP-сервера. SessionStart-хук напоминает сверить SKILL.md при выходе новой версии ctx7
+suggests: []
+stacks: []
+source: upstash/context7
+status: рабочий
+requires_env: []
+

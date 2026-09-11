@@ -1,0 +1,14 @@
+id: shadcn-official
+title: shadcn/ui (официальный CLI)
+summary: >-
+  Официальный shadcn/ui — не npm-библиотека, а copy-paste компоненты в свой
+  код через CLI (`npx shadcn add`). MCP сознательно не подключаем (см.
+  SKILL.md). База, с которой стартуют наброски интерфейса.
+  Community-дополнения — отдельный блок `shadcn-community`, сюда не входят.
+suggests: [shadcn-community, web-color, web-fundamentals]
+stacks: [interface]
+source: официальный (ui.shadcn.com/docs), ставится как есть, без обвязки
+status: черновик
+requires_env: []
+needs: []
+
