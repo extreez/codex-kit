@@ -1,0 +1,24 @@
+---
+name: geo-optimize-geo-optimize
+description: "Codex skill generated from block command geo-optimize."
+---
+
+---
+description: Запустить GEO composite score по проекту/домену
+argument-hint: "[URL или пусто — текущий проект]"
+---
+
+Запусти оценку по скиллу `geo-optimize`.
+
+Обязательно:
+1. Сначала спроси модель и эффорт под 4 субагентов (правило).
+2. Определи приоритетные страницы, если сайт большой — не гони весь сайт
+   без ограничения выборки.
+3. Запусти `citability-scorer`, `brand-scanner`, `geo-crawler-check`,
+   `technical-schema-checker` параллельно, каждый недоверчиво по своей зоне.
+4. Объедини в composite score по формуле `references/composite-score.md`.
+5. Отчёт с разбивкой по категориям, находками (URL/файл), разделом «не
+   проверено».
+
+Не чини находки в этом проходе. Только оценка и отчёт.
+

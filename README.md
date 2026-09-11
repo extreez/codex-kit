@@ -35,3 +35,16 @@ powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\inst
 ```
 
 Установка нового каталога скиллов может потребовать перезапуска сессии Codex.
+
+## Codex marketplace
+
+Репозиторий содержит Codex marketplace с плагином `codex-kit`:
+
+```powershell
+codex plugin marketplace add extreez/codex-kit --ref main
+codex plugin add codex-kit@personal
+```
+
+Для локальной разработки подключи корень репозитория вместо `extreez/codex-kit`.
+Защитный skill `kit` не включён в marketplace-плагин, потому что он предназначен
+только для явного вызова. Для него используй локальный установщик выше.
