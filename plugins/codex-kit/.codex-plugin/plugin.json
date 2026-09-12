@@ -1,7 +1,7 @@
 {
   "name": "codex-kit",
-  "version": "0.1.0",
-  "description": "Codex Kit plugin",
+  "version": "0.2.0",
+  "description": "Codex Kit manager for project and global skills and plugins",
   "author": {
     "name": "Local developer"
   },
@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "Codex Kit",
     "shortDescription": "Use Codex Kit in Codex.",
-    "longDescription": "Codex Kit adds a local Codex plugin scaffold.",
+    "longDescription": "Codex Kit installs skills at an explicit global or project target and audits Codex plugins.",
     "developerName": "Local developer",
     "category": "Productivity",
     "capabilities": [],

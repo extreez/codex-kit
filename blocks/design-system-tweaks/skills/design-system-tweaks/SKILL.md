@@ -88,3 +88,9 @@ side `photo`/`proof column`/`pull-quote`, Divider `hairline`/
 сначала (быстро, дёшево), потом subagent на раздел уже пишет вариацию
 под зарезервированный архетип — тогда параллельно безопасно.
 
+## Synthesized repeated-component rules
+
+Treat repeated cards, rows, tiles, KPI blocks, and navigation items as fixed
+slot models. Keep anchors aligned, reserve optional slots, clamp overflow, and
+return the full value through a title or tooltip. Vary structure deliberately
+between sections, but do not vary the component contract itself.

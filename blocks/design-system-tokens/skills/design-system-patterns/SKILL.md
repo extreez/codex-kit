@@ -79,3 +79,10 @@ Style Dictionary) — subagent на платформу, каждый читае�
 исходный набор токенов и просто транслирует в свой формат — независимо,
 без гонки, источник общий и read-only для всех.
 
+## Synthesized component rules
+
+Component families share radius, border, shadow, spacing, color, and state
+logic. Keep those values in the component-token layer, make elevated surfaces
+use the same depth scale, and reserve anchor slots in repeated cards and rows
+so content length does not move actions around. Components consume semantic
+tokens only; raw palette values belong in primitives.

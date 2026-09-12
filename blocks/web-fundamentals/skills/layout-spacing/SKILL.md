@@ -178,3 +178,12 @@ CSS-свойства для RTL. Готово — когда grep пуст.
 Тот же сценарий распараллеливания по 4 блокам фундамента описан в
 `perception/SKILL.md` — не дублирую здесь.
 
+## Synthesized interface rules
+
+Use this skill as the home for structure-level decisions formerly spread across
+narrow UI skills: information architecture, Gestalt grouping, layout choice,
+responsive behavior, density, scope signaling, tabs, sticky elements, scroll
+containers, data views, and guided flows. Decide the user's task and hierarchy
+first, then choose the smallest layout that supports it. Mobile is an
+interaction change, not a scaled desktop layout. Avoid nested scroll regions
+and make scope and consequences visible before an action.

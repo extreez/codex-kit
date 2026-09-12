@@ -1,8 +1,6 @@
 ---
 name: kit
-description: Управляет каталогом Codex-kit: показывает блоки, устанавливает блоки и стеки в .agents/skills и проверяет каталог. Использовать по явной просьбе о Codex-kit, блоке или стеке.
-disable-model-invocation: true
-argument-hint: "[list|add|new|apply|temp|try|doctor]"
+description: "Управляет каталогом Codex-kit: показывает блоки, устанавливает блоки и стеки в .agents/skills и проверяет каталог. Использовать по явной просьбе о Codex-kit, блоке или стеке."
 ---
 
 # kit — управление Codex-kit
@@ -37,3 +35,18 @@ powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\inst
 
 После установки нового каталога скиллов перезапусти сессию Codex, если он ещё не
 видит `.agents/skills`.
+
+## Plugins Codex
+
+Для глобальных plugins используй `scripts/plugins.ps1`, который вызывает
+официальный `codex plugin`:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "$HOME\Documents\codex-kit\scripts\plugins.ps1" -Action list
+powershell -ExecutionPolicy Bypass -File "$HOME\Documents\codex-kit\scripts\plugins.ps1" -Action add -Plugin <name>@<marketplace>
+powershell -ExecutionPolicy Bypass -File "$HOME\Documents\codex-kit\scripts\plugins.ps1" -Action remove -Plugin <name>@<marketplace>
+```
+
+Настоящий project scope для plugins не заявляй. Для проекта можно записать
+требование в `<project>\.codex-kit\plugins.json` через `-Action require`; это
+нужно для аудита и проверки, но не включает plugin в Codex Desktop.

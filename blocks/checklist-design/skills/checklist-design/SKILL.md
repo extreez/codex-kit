@@ -348,3 +348,10 @@ Audit-режим уже выдаёт таблицу со статусами по
 permissions) — не разносить по агентам, это уже описано в самом файле
 как «audit against each, kept clearly separate», делает одна сессия.
 
+## Synthesized flow review rules
+
+When no page-type checklist fits, use critique mode to check task clarity,
+information architecture, hierarchy, content, interaction affordance,
+accessibility, and recovery. A flow is incomplete when it covers only the
+happy path and omits loading, empty, error, permission, cancellation, or return
+paths.

@@ -366,3 +366,10 @@ hero-enrichment.md (Nutlope/hallmark), break/variant/explain-interface
 можно только между **разными экранами** (subagent на экран), не внутри
 одного вердикта.
 
+## Synthesized brand and product rules
+
+Visual character belongs in shape language, type, spacing, color roles,
+iconography, imagery, and motion together. Keep the real product visible in
+product representations: use truthful labels, numbers, states, and output.
+Use hierarchy and contrast to make the primary task obvious, then apply the
+brand tone without inventing decorative chrome that the product does not have.

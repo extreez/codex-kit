@@ -190,3 +190,10 @@ focus. Loading и success нуждаются в объявлениях для sc
 обычно нет; если есть переиспользуемый компонент (одна карточка на 5
 экранах) — состояния этого компонента продумать один раз, не 5.
 
+## Synthesized component state rules
+
+Inventory states before polishing the happy path: rest, hover, pressed, focus,
+disabled, loading, empty, success, error, and recovery. Apply the same state
+vocabulary to buttons, forms, tabs, modals, notifications, filters, tables,
+and selection. Put validation beside the field, keep error colors semantic and
+recoverable, and expose the next action.

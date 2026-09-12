@@ -1,5 +1,5 @@
 id: interface
 title: Интерфейс
 source: repo/
-blocks: [checklist-design, dark-mode-design, design-system-docs, design-system-extract, design-system-tokens, design-system-tweaks, figma-canvas, figma-mcp, icons0-dev, illustration-style, impeccable, shadcn-official, shadow-plugin, taste-skill, ux-writing, web-a11y-code, web-a11y-design, web-color, web-fundamentals, web-motion, web-states, web-taste]
+blocks: [brand-voice, checklist-design, dark-mode-design, design-system-docs, design-system-extract, design-system-tokens, design-system-tweaks, figma-canvas, figma-mcp, icons0-dev, illustration-style, impeccable, interface-router, shadcn-official, shadow-plugin, taste-skill, ux-writing, web-a11y-code, web-a11y-design, web-color, web-fundamentals, web-motion, web-states, web-taste]
 

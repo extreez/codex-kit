@@ -1,8 +1,9 @@
 param(
     [string]$Block,
     [string]$Stack,
-    [string]$Target = (Join-Path (Get-Location) '.agents\skills'),
+    [string]$Target = (Join-Path $(if ([string]::IsNullOrWhiteSpace([Environment]::GetFolderPath('UserProfile'))) { (Get-Location).Path } else { [Environment]::GetFolderPath('UserProfile') }) '.agents\skills'),
     [string]$ProjectPath,
+    [string]$Remove,
     [switch]$Force,
     [switch]$New,
     [switch]$List,
@@ -11,6 +12,22 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $Kit = Split-Path -Parent $PSScriptRoot
+
+if ($Remove) {
+    if ($Block -or $Stack -or $ProjectPath -or $New -or $Force -or $List -or $Doctor) {
+        throw '-Remove cannot be combined with other operations.'
+    }
+    if ($Remove -match '[\\/]') {
+        throw '-Remove accepts one skill name, not a path.'
+    }
+    $removePath = Join-Path $Target $Remove
+    if (-not (Test-Path -LiteralPath $removePath -PathType Container)) {
+        throw "Skill not found in target: $removePath"
+    }
+    Remove-Item -LiteralPath $removePath -Recurse -Force
+    Write-Output "Removed: $Remove"
+    exit 0
+}
 
 function Get-StackBlocks([string]$Name) {
     $file = Join-Path $Kit "stacks\$Name\stack.yaml"

@@ -191,3 +191,10 @@ Ramp-шаги и контраст между ними численно пров�
 Строишь палитру сразу для нескольких тем (light/dark/brand-variant) —
 subagent на тему, независимо, контраст проверяется в каждой отдельно.
 
+## Synthesized palette and theme rules
+
+When starting from one or two brand colors, derive the ramp in OKLCH, then map
+it to semantic roles rather than using raw values in components. Generate
+interactive states from the base role, keep status colors few and unambiguous,
+and validate contrast in every theme. A dark theme changes surface hierarchy;
+it is not a simple inversion of the light palette.

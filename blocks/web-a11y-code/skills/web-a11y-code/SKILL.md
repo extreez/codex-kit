@@ -91,3 +91,9 @@ inspect (ручной тир)      ┘   (WCAG-EM зонтик)    (edit→verif
 "весь сайт" уже сам композирует через субагентов (унаследовано от
 AccessLint) — свой agent-паттерн заводить не нужно, инструмент уже умеет.
 
+## Synthesized implementation rules
+
+Use semantic HTML before ARIA, preserve native keyboard behavior, label fields
+through their actual controls, and keep focus visible after dialogs, tabs, and
+validation. Verify names, roles, states, hit areas, zoom, reduced motion, and
+screen-reader order in the rendered interface.

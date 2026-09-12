@@ -64,3 +64,9 @@ ARIA, отсутствующий focus-trap в модалках, немой ин
 `web-a11y-code`, этот блок — справочник по написанию, не сканер сам по
 себе.
 
+## Synthesized accessibility rules
+
+Accessibility starts in the design: keyboard and focus paths, touch target
+size, readable type, contrast, reduced motion, clear labels, simple language,
+and recoverable errors. Check the complete flow, including empty, loading,
+validation, and failure states, not only the default screenshot.

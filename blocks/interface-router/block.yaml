@@ -1,0 +1,9 @@
+id: interface-router
+title: Роутер интерфейсного синтеза
+summary: Выбирает минимальный набор проектных интерфейсных скиллов и связывает структуру, состояния, визуальную систему, доступность, motion и проверку результата.
+suggests: [web-fundamentals, web-states, web-color, design-system-tokens, web-a11y-code, web-taste, web-motion, checklist-design]
+stacks: [interface]
+source: Синтез дембрандт-роутинга и существующих блоков Codex-kit без переноса узких глобальных скиллов.
+status: active
+requires_env: []
+needs: []

@@ -9,3 +9,7 @@
 ```powershell
 powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Stack research
 ```
+
+В Codex project scope для skills реализован через `.agents/skills`. Для plugins
+текущий runtime использует глобальный `CODEX_HOME`, поэтому Codex-kit хранит
+проектные plugin-требования в `.codex-kit/plugins.json` и проверяет их отдельно.

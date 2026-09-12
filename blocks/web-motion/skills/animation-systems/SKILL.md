@@ -60,3 +60,9 @@ layout), Morph/shared element (высокий крафт: требует сог�
 *Источник: `animation-systems` (MengTo/Skills), MIT license.
 [animation-systems.md](animation-systems.md) — дословно.*
 
+## Synthesized interaction rules
+
+Use motion only when it explains change, preserves continuity, or confirms an
+action. Micro-interactions inherit the product's state model, respect reduced
+motion, and must not delay keyboard or touch feedback. Prefer one shared motion
+system over isolated component animations.
