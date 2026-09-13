@@ -1,7 +1,7 @@
 {
   "name": "codex-kit",
-  "version": "0.2.1",
-  "description": "Codex Kit manager for project and global skills and plugins",
+  "version": "0.3.0",
+  "description": "Codex Kit manager that fetches and installs selected project skills",
   "author": {
     "name": "Local developer"
   },
@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "Codex Kit",
     "shortDescription": "Use Codex Kit in Codex.",
-    "longDescription": "Codex Kit installs skills at an explicit global or project target and audits Codex plugins.",
+    "longDescription": "Codex Kit searches a GitHub catalog and installs only selected skills into the current project.",
     "developerName": "Local developer",
     "category": "Productivity",
     "capabilities": [],

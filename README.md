@@ -1,103 +1,56 @@
 # codex-kit
 
-Каталог блоков и стеков, адаптированный для Codex.
+`codex-kit` хранит большой каталог skills в GitHub, но не загружает его в
+каждую сессию Codex. Marketplace plugin содержит только один manager-skill.
+Он по явному запросу находит package в удалённом каталоге и ставит выбранный
+skill, block или stack в `.agents/skills` текущего проекта.
 
-## Что изменено для Codex
+## Как это работает
 
-- память проекта и шаблоны используют `AGENTS.md`;
-- активные скиллы устанавливаются в `.agents/skills/`;
-- команды блоков становятся обычными Codex-скиллами с именем `<блок>-<команда>`;
-- Claude-only хуки сохраняются как исходник, но сами по себе не запускаются;
-- MCP-конфиги и внешние CLI требуют отдельной настройки в Codex.
-
-## Установка
-
-Из корня проекта:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Block dev-build
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Skill gsap
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Stack dev
+```text
+codex-kit manager → git fetch каталога → sparse checkout выбранных путей
+                  → .agents/skills проекта → skills доступны в проекте
 ```
 
-`-Skill` устанавливает один skill, например `gsap`. `-Block web-motion`
-устанавливает весь связанный набор моушена. По умолчанию target равен
-`.agents/skills` текущего проекта, для глобальной установки укажи
-`-Target "$HOME\.agents\skills"` явно.
+Каждая установка получает точный Git commit, а
+`.codex-kit/skills.lock.json` сохраняет источник, ref, commit и выбранные
+packages. Поэтому проект воспроизводим, а глобальный каталог не раздувает
+контекст.
 
-Видео-набор не входит в глобальный scope. Когда открыт корень видео-проекта,
-подключи его целиком:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Stack video -Target .\.agents\skills
-```
-
-Развернуть новый проект из стека:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -New -Stack dev -ProjectPath .\my-project
-```
-
-Если скилл уже существует, установка пропускает его; `-Force` разрешает замену.
-
-```powershell
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -List
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Doctor
-```
-
-Для удаления одного установленного скилла используй `-Remove <name>`
-с тем же `-Target`. Команда принимает только имя каталога и не смешивается с
-другими операциями.
-
-Управление plugins выполняется отдельным Codex-совместимым скриптом:
-
-```powershell
-# список глобальных plugins
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\codex-kit\scripts\plugins.ps1" -Action list
-
-# установить или удалить глобальный plugin
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\codex-kit\scripts\plugins.ps1" -Action add -Plugin github@openai-curated
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\codex-kit\scripts\plugins.ps1" -Action remove -Plugin github@openai-curated
-
-# записать plugin как требование конкретного проекта
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\codex-kit\scripts\plugins.ps1" -Action require -Plugin figma@openai-curated -ProjectPath .
-```
-
-Skills имеют настоящий project scope через `.agents/skills`. Plugins пока
-устанавливаются глобально через `codex plugin`; файл `.codex-kit/plugins.json`
-фиксирует проектные требования и проверяет их, но не подменяет механизм Codex.
-
-Short scope recipe:
-
-```powershell
-# global user scope
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Stack dev
-
-# existing project scope
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Stack interface -Target .\.agents\skills
-
-# create a new project with a stack
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -New -Stack interface -ProjectPath .\my-project
-
-# remove one skill from a chosen scope
-powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Remove interface-router -Target .\.agents\skills
-```
-
-Стек `video` устанавливает блок `hyperframes` с 26 скиллами и добавляет
-вспомогательные блоки `video-pipeline` и `video-watch`. Сам проект при этом
-не создаётся автоматически.
-
-Установка нового каталога скиллов может потребовать перезапуска сессии Codex.
-
-## Codex marketplace
-
-Репозиторий содержит Codex marketplace с плагином `codex-kit`.
-Подключи Git-источник и затем установи plugin:
+## Установка manager
 
 ```powershell
 codex plugin marketplace add extreez/codex-kit --ref main
 codex plugin add codex-kit@personal
 ```
 
-После этого перезапусти thread Codex. Менеджер включён в marketplace-плагин как
-`codex-kit`, а не `kit`, чтобы не конфликтовать с legacy-набором для Claude.
+Перезапусти task Codex после установки plugin. В новой сессии будет доступен
+один skill `codex-kit`, а не весь каталог.
+
+## Использование в Codex
+
+Попроси Codex, например: `codex-kit, найди gsap и подключи его к этому
+проекту`, `подключи блок web-motion` или `добавь stack dev`.
+
+Manager сначала ищет package в GitHub. Установка всегда идёт только в текущий
+проект. Он не устанавливает skills глобально.
+
+Для обновления выбранных packages: `codex-kit, обнови skills этого проекта`.
+Для проверки: `codex-kit, проверь skills этого проекта`.
+
+## Разработка каталога
+
+`blocks/` и `stacks/` остаются источником правды. После изменения любого
+`SKILL.md` или `stack.yaml` обнови индекс:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\catalog.ps1 -Write
+powershell -ExecutionPolicy Bypass -File .\scripts\catalog.ps1 -Check
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -Doctor
+```
+
+Локальный установщик также остаётся доступен для разработки и тестов:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -Skill gsap -Target .\.agents\skills
+```
