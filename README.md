@@ -1,6 +1,6 @@
 # codex-kit
 
-Каталог из тех же 111 блоков и 10 стеков, что и `claude-kit`, адаптированный для Codex.
+Каталог блоков и стеков, адаптированный для Codex.
 
 ## Что изменено для Codex
 
@@ -16,10 +16,21 @@
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Block dev-build
+powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Skill gsap
 powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Stack dev
 ```
 
-По умолчанию скиллы копируются в `.agents/skills/` текущего проекта. Для глобальной установки укажи `-Target "$HOME\.agents\skills"`.
+`-Skill` устанавливает один skill, например `gsap`. `-Block web-motion`
+устанавливает весь связанный набор моушена. По умолчанию target равен
+`.agents/skills` текущего проекта, для глобальной установки укажи
+`-Target "$HOME\.agents\skills"` явно.
+
+Видео-набор не входит в глобальный scope. Когда открыт корень видео-проекта,
+подключи его целиком:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Stack video -Target .\.agents\skills
+```
 
 Развернуть новый проект из стека:
 
@@ -34,7 +45,7 @@ powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\inst
 powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Doctor
 ```
 
-Для удаления одного глобально установленного скилла используй `-Remove <name>`
+Для удаления одного установленного скилла используй `-Remove <name>`
 с тем же `-Target`. Команда принимает только имя каталога и не смешивается с
 другими операциями.
 
@@ -72,17 +83,21 @@ powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\inst
 powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\install.ps1" -Remove interface-router -Target .\.agents\skills
 ```
 
+Стек `video` устанавливает блок `hyperframes` с 26 скиллами и добавляет
+вспомогательные блоки `video-pipeline` и `video-watch`. Сам проект при этом
+не создаётся автоматически.
+
 Установка нового каталога скиллов может потребовать перезапуска сессии Codex.
 
 ## Codex marketplace
 
-Репозиторий содержит Codex marketplace с плагином `codex-kit`:
+Репозиторий содержит локальный Codex marketplace с плагином `codex-kit`.
+Из корня репозитория подключи его:
 
 ```powershell
-codex plugin marketplace add extreez/codex-kit --ref main
-codex plugin add codex-kit@personal
+codex plugin marketplace add .
+codex plugin add codex-kit@codex-kit-local
 ```
 
-Для локальной разработки подключи корень репозитория вместо `extreez/codex-kit`.
-Skill `kit` включён в Codex marketplace-плагин, но помечен как доступный только
-при явном вызове.
+После этого перезапусти thread Codex. Менеджер включён в marketplace-плагин как
+`codex-kit`, а не `kit`, чтобы не конфликтовать с legacy-набором для Claude.

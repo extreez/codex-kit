@@ -1,7 +1,8 @@
 param(
     [string]$Block,
+    [string]$Skill,
     [string]$Stack,
-    [string]$Target = (Join-Path $(if ([string]::IsNullOrWhiteSpace([Environment]::GetFolderPath('UserProfile'))) { (Get-Location).Path } else { [Environment]::GetFolderPath('UserProfile') }) '.agents\skills'),
+    [string]$Target,
     [string]$ProjectPath,
     [string]$Remove,
     [switch]$Force,
@@ -13,8 +14,12 @@ param(
 $ErrorActionPreference = 'Stop'
 $Kit = Split-Path -Parent $PSScriptRoot
 
+if ([string]::IsNullOrWhiteSpace($Target)) {
+    $Target = Join-Path (Get-Location).Path '.agents\skills'
+}
+
 if ($Remove) {
-    if ($Block -or $Stack -or $ProjectPath -or $New -or $Force -or $List -or $Doctor) {
+    if ($Block -or $Skill -or $Stack -or $ProjectPath -or $New -or $Force -or $List -or $Doctor) {
         throw '-Remove cannot be combined with other operations.'
     }
     if ($Remove -match '[\\/]') {
@@ -46,6 +51,22 @@ function Get-BlockSkillFiles([string]$Name) {
     return @(Get-ChildItem -LiteralPath $dir -Recurse -File -Filter 'SKILL.md')
 }
 
+function Get-SkillName([string]$Path) {
+    $raw = Get-Content -Raw -Encoding UTF8 -LiteralPath $Path
+    $match = [regex]::Match($raw, '(?m)^name:\s*(.+?)\s*$')
+    if (-not $match.Success) { throw "Skill has no name: $Path" }
+    return $match.Groups[1].Value.Trim().Trim([char]34, [char]39)
+}
+
+function Get-SkillFile([string]$Name) {
+    if ($Name -match '[\\/]') { throw '-Skill accepts one skill name, not a path.' }
+    $matches = @(Get-ChildItem -LiteralPath (Join-Path $Kit 'blocks') -Recurse -File -Filter 'SKILL.md' |
+        Where-Object { (Get-SkillName $_.FullName) -eq $Name })
+    if ($matches.Count -eq 0) { throw "Skill not found: $Name" }
+    if ($matches.Count -gt 1) { throw "Skill name is ambiguous: $Name ($($matches.FullName -join ', '))" }
+    return $matches[0]
+}
+
 function Install-Skill([string]$Name, [string]$Source) {
     $dest = Join-Path $Target $Name
     if (Test-Path -LiteralPath $dest) {
@@ -60,19 +81,24 @@ function Install-Skill([string]$Name, [string]$Source) {
 function Install-Block([string]$Name) {
     $files = Get-BlockSkillFiles $Name
     foreach ($file in $files) {
-        Install-Skill $file.Directory.Name $file.FullName
+        Install-Skill (Get-SkillName $file.FullName) $file.FullName
     }
 
     $commands = Join-Path $Kit "blocks\$Name\commands"
     if (Test-Path -LiteralPath $commands) {
         foreach ($file in Get-ChildItem -LiteralPath $commands -File -Filter '*.md') {
             $skillName = "$Name-$($file.BaseName)"
-            $temp = Join-Path ([IO.Path]::GetTempPath()) "$skillName-SKILL.md"
-            $body = Get-Content -Raw -Encoding UTF8 $file.FullName
-            @("---", "name: $skillName", "description: Codex skill generated from block command $Name.", "---", "", $body) |
-                Set-Content -Encoding UTF8 -LiteralPath $temp
-            Install-Skill $skillName $temp
-            Remove-Item -LiteralPath $temp -Force
+            $tempDir = Join-Path ([IO.Path]::GetTempPath()) "$skillName-$([guid]::NewGuid().ToString('N'))"
+            $temp = Join-Path $tempDir 'SKILL.md'
+            New-Item -ItemType Directory -Path $tempDir | Out-Null
+            try {
+                $body = Get-Content -Raw -Encoding UTF8 $file.FullName
+                @("---", "name: $skillName", "description: Codex skill generated from block command $Name.", "---", "", $body) |
+                    Set-Content -Encoding UTF8 -LiteralPath $temp
+                Install-Skill $skillName $temp
+            } finally {
+                Remove-Item -LiteralPath $tempDir -Recurse -Force -ErrorAction SilentlyContinue
+            }
         }
     }
 }
@@ -95,8 +121,10 @@ if ($Doctor) {
     exit 0
 }
 
-if ($Block -and $Stack) { throw 'Use either -Block or -Stack.' }
-if (-not $Block -and -not $Stack) { throw 'Use -Block or -Stack.' }
+if (@($Block, $Skill, $Stack | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }).Count -gt 1) {
+    throw 'Use one of -Block, -Skill, or -Stack.'
+}
+if (-not $Block -and -not $Skill -and -not $Stack) { throw 'Use -Block, -Skill, or -Stack.' }
 if ($New -and (-not $Stack -or -not $ProjectPath)) { throw 'New requires Stack and ProjectPath.' }
 
 if ($New) {
@@ -120,4 +148,9 @@ if ($New) {
 
 $names = if ($Stack) { Get-StackBlocks $Stack } else { @($Block) }
 if ($Stack -and $names.Count -eq 0) { Write-Output "Stack $Stack has no blocks." }
+if ($Skill) {
+    $file = Get-SkillFile $Skill
+    Install-Skill (Get-SkillName $file.FullName) $file.FullName
+    exit 0
+}
 foreach ($name in $names) { Install-Block $name }

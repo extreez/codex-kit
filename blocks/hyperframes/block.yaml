@@ -1,0 +1,15 @@
+id: hyperframes
+title: HyperFrames и производство видео
+summary: >-
+  Полный видео-набор пользователя для HyperFrames, моушн-дизайна, монтажа,
+  субтитров, аудио, раскадровок, презентаций и видео-аналитики. Включает
+  26 скиллов с их references, scripts и assets. Ставится только в проектный
+  scope через стек video.
+suggests: [video-pipeline, video-watch, web-motion, social-media]
+stacks: [video]
+source: >-
+  Перенесено из глобального набора Codex-скиллов пользователя в каталог
+  codex-kit. Исходные движки и внешние MCP/plugins этим блоком не включаются.
+status: active
+requires_env: []
+needs: [ffmpeg, node>=22]

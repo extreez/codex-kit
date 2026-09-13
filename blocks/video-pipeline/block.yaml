@@ -14,7 +14,7 @@ summary: >-
   последнего кадра, без зависимостей). Справочники: пресеты переходов,
   библиотека звуковых эффектов.
 suggests: [video-watch, figma-canvas, web-motion]
-stacks: []
+stacks: [video]
 source: >-
   Своего движка блок не несёт. HyperFrames (heygen-com, Apache 2.0) -
   композиция, моушн, переходы, аудио-микс, рендер, ставится как есть со

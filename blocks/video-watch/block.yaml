@@ -9,7 +9,7 @@ summary: >-
   ElevenLabs Scribe с разделением спикеров). Полезен сам по себе, без
   производства видео.
 suggests: [video-pipeline, transcribe, social-media]
-stacks: []
+stacks: [video]
 source: >-
   claude-video (bradautomates/claude-video, MIT) - ставится как есть,
   дешёвый режим watch. Метод глубокого анализа через Gemini Files API -
