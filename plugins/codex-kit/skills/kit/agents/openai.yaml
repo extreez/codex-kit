@@ -1,2 +1,5 @@
+interface:
+  display_name: Codex Kit
+  short_description: Управление навыками и плагинами Codex
 policy:
   allow_implicit_invocation: false
