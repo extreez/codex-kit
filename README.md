@@ -91,12 +91,12 @@ powershell -ExecutionPolicy Bypass -File "$HOME\Documents\Codex-kit\scripts\inst
 
 ## Codex marketplace
 
-Репозиторий содержит локальный Codex marketplace с плагином `codex-kit`.
-Из корня репозитория подключи его:
+Репозиторий содержит Codex marketplace с плагином `codex-kit`.
+Подключи Git-источник и затем установи plugin:
 
 ```powershell
-codex plugin marketplace add .
-codex plugin add codex-kit@codex-kit-local
+codex plugin marketplace add extreez/codex-kit --ref main
+codex plugin add codex-kit@personal
 ```
 
 После этого перезапусти thread Codex. Менеджер включён в marketplace-плагин как
